@@ -32,4 +32,20 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    })("sym-welcome");
    //Edge symbol end:'sym-welcome'
 
+   //=========================================================
+   
+   //Edge symbol: 'sym-page1'
+   (function(symbolName) {   
+   
+   })("sym-page1");
+   //Edge symbol end:'sym-page1'
+
+   //=========================================================
+   
+   //Edge symbol: 'sym-page2'
+   (function(symbolName) {   
+   
+   })("sym-page2");
+   //Edge symbol end:'sym-page2'
+
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-4782395");

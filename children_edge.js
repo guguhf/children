@@ -43,8 +43,25 @@
                             opacity: '0'
                         },
                         {
+                            id: 'sym-page1',
+                            symbolName: 'sym-page1',
+                            display: 'none',
+                            type: 'rect',
+                            rect: ['0', '0', '1024', '768', 'auto', 'auto'],
+                            opacity: '0'
+                        },
+                        {
+                            id: 'sym-page2',
+                            symbolName: 'sym-page2',
+                            display: 'none',
+                            type: 'rect',
+                            rect: ['0', '0', '1024', '768', 'auto', 'auto'],
+                            opacity: '0'
+                        },
+                        {
                             id: 'background',
                             display: 'none',
+                            volume: '0.3',
                             type: 'audio',
                             tag: 'audio',
                             rect: ['164', '166', '320px', '45px', 'auto', 'auto'],
@@ -76,6 +93,26 @@
                     autoPlay: true,
                     data: [
                         [
+                            "eid155",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${sym-page2}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid156",
+                            "display",
+                            38500,
+                            0,
+                            "linear",
+                            "${sym-page2}",
+                            'none',
+                            'block'
+                        ],
+                        [
                             "eid61",
                             "opacity",
                             3000,
@@ -84,6 +121,16 @@
                             "${sym-welcome}",
                             '0',
                             '1'
+                        ],
+                        [
+                            "eid74",
+                            "opacity",
+                            8011,
+                            239,
+                            "linear",
+                            "${sym-welcome}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid54",
@@ -106,6 +153,26 @@
                             '-198px'
                         ],
                         [
+                            "eid77",
+                            "opacity",
+                            8011,
+                            239,
+                            "linear",
+                            "${sym-page1}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid154",
+                            "opacity",
+                            38000,
+                            500,
+                            "linear",
+                            "${sym-page1}",
+                            '1',
+                            '0'
+                        ],
+                        [
                             "eid55",
                             "scaleY",
                             2000,
@@ -126,6 +193,16 @@
                             '0'
                         ],
                         [
+                            "eid157",
+                            "opacity",
+                            38500,
+                            500,
+                            "linear",
+                            "${sym-page2}",
+                            '0',
+                            '1'
+                        ],
+                        [
                             "eid58",
                             "display",
                             0,
@@ -142,6 +219,26 @@
                             0,
                             "linear",
                             "${sym-welcome}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid72",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${sym-page1}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid75",
+                            "display",
+                            8011,
+                            0,
+                            "linear",
+                            "${sym-page1}",
                             'none',
                             'block'
                         ],
@@ -317,6 +414,480 @@
                             {valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'}
                         ],
                             [ "eid63", "trigger", 3250, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${bird}', [] ] ]
+                    ]
+                }
+            },
+            "sym-page1": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            id: 'page1-bg',
+                            type: 'image',
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/page1-bg.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['387px', '557', '115px', '152px', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'kid-cry',
+                            opacity: '1',
+                            display: 'block',
+                            fill: ['rgba(0,0,0,0)', 'images/kid-cry.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['387', '557', '116px', '153px', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'kid-smile-2',
+                            opacity: '0',
+                            display: 'block',
+                            fill: ['rgba(0,0,0,0)', 'images/kid-smile-2.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['386px', '557px', '115px', '152px', 'auto', 'auto'],
+                            id: 'kid-smile-1',
+                            type: 'image',
+                            display: 'block',
+                            fill: ['rgba(0,0,0,0)', 'images/kid-smile-1.png', '0px', '0px']
+                        },
+                        {
+                            id: 'cherry-ltra2',
+                            type: 'image',
+                            rect: ['364px', '566px', '67px', '61px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/cherry-ltra2.png', '0px', '0px']
+                        },
+                        {
+                            id: 'cherry2',
+                            type: 'image',
+                            rect: ['622px', '442px', '63px', '62px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/cherry.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['175px', '86px', '655px', '597px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'page1-chart',
+                            type: 'image',
+                            display: 'block',
+                            fill: ['rgba(0,0,0,0)', 'images/page1-chart.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['398px', '566px', '91px', '50px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'page1-chart-block3',
+                            type: 'image',
+                            display: 'block',
+                            fill: ['rgba(0,0,0,0)', 'images/page1-chart-block3.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['410px', '588px', '92px', '39px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'page1-chart-block2',
+                            type: 'image',
+                            display: 'block',
+                            fill: ['rgba(0,0,0,0)', 'images/page1-chart-block2.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['410px', '583px', '92px', '28px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'page1-chart-block1',
+                            type: 'image',
+                            display: 'block',
+                            fill: ['rgba(0,0,0,0)', 'images/page1-chart-block1.png', '0px', '0px']
+                        },
+                        {
+                            preload: 'auto',
+                            type: 'audio',
+                            source: ['media/page1.mp3'],
+                            id: 'page1',
+                            rect: ['495', '278', '320px', '45px', 'auto', 'auto'],
+                            display: 'none',
+                            tag: 'audio'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1024px', '768px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 36722,
+                    autoPlay: true,
+                    data: [
+                        [
+                            "eid80",
+                            "display",
+                            8250,
+                            0,
+                            "linear",
+                            "${kid-smile-2}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid94",
+                            "display",
+                            11000,
+                            0,
+                            "linear",
+                            "${kid-smile-2}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid86",
+                            "display",
+                            11250,
+                            0,
+                            "linear",
+                            "${kid-smile-2}",
+                            'block',
+                            'block'
+                        ],
+                        [
+                            "eid99",
+                            "display",
+                            8250,
+                            0,
+                            "linear",
+                            "${page1-chart-block2}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid117",
+                            "display",
+                            14000,
+                            0,
+                            "linear",
+                            "${page1-chart-block2}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid149",
+                            "scaleX",
+                            16000,
+                            500,
+                            "linear",
+                            "${page1-chart}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid100",
+                            "display",
+                            8250,
+                            0,
+                            "linear",
+                            "${page1-chart-block3}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid131",
+                            "display",
+                            15000,
+                            0,
+                            "linear",
+                            "${page1-chart-block3}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid116",
+                            "scaleY",
+                            13000,
+                            500,
+                            "linear",
+                            "${page1-chart-block1}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid98",
+                            "display",
+                            8250,
+                            0,
+                            "linear",
+                            "${page1-chart-block1}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid101",
+                            "display",
+                            13000,
+                            0,
+                            "linear",
+                            "${page1-chart-block1}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid114",
+                            "top",
+                            13000,
+                            500,
+                            "linear",
+                            "${page1-chart-block1}",
+                            '583px',
+                            '229px'
+                        ],
+                        [
+                            "eid141",
+                            "top",
+                            15000,
+                            500,
+                            "linear",
+                            "${page1-chart-block3}",
+                            '566px',
+                            '401px'
+                        ],
+                        [
+                            "eid97",
+                            "display",
+                            8250,
+                            0,
+                            "linear",
+                            "${page1-chart}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid144",
+                            "display",
+                            16000,
+                            0,
+                            "linear",
+                            "${page1-chart}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid150",
+                            "scaleY",
+                            16000,
+                            500,
+                            "linear",
+                            "${page1-chart}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid143",
+                            "scaleY",
+                            15000,
+                            500,
+                            "linear",
+                            "${page1-chart-block3}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid79",
+                            "top",
+                            10000,
+                            500,
+                            "linear",
+                            "${cherry-ltra2}",
+                            '481px',
+                            '601px'
+                        ],
+                        [
+                            "eid85",
+                            "top",
+                            11000,
+                            250,
+                            "linear",
+                            "${cherry-ltra2}",
+                            '601px',
+                            '566px'
+                        ],
+                        [
+                            "eid142",
+                            "scaleX",
+                            15000,
+                            500,
+                            "linear",
+                            "${page1-chart-block3}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid140",
+                            "left",
+                            15000,
+                            500,
+                            "linear",
+                            "${page1-chart-block3}",
+                            '398px',
+                            '539px'
+                        ],
+                        [
+                            "eid130",
+                            "scaleY",
+                            14000,
+                            500,
+                            "linear",
+                            "${page1-chart-block2}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid113",
+                            "left",
+                            13000,
+                            500,
+                            "linear",
+                            "${page1-chart-block1}",
+                            '410px',
+                            '539px'
+                        ],
+                        [
+                            "eid129",
+                            "scaleX",
+                            14000,
+                            500,
+                            "linear",
+                            "${page1-chart-block2}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid81",
+                            "display",
+                            8250,
+                            0,
+                            "linear",
+                            "${kid-cry}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid83",
+                            "display",
+                            10587,
+                            0,
+                            "linear",
+                            "${kid-cry}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid87",
+                            "display",
+                            11250,
+                            0,
+                            "linear",
+                            "${kid-cry}",
+                            'block',
+                            'block'
+                        ],
+                        [
+                            "eid128",
+                            "top",
+                            14000,
+                            500,
+                            "linear",
+                            "${page1-chart-block2}",
+                            '588px',
+                            '310px'
+                        ],
+                        [
+                            "eid82",
+                            "display",
+                            10587,
+                            0,
+                            "linear",
+                            "${kid-smile-1}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid96",
+                            "opacity",
+                            11000,
+                            250,
+                            "linear",
+                            "${kid-smile-2}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid115",
+                            "scaleX",
+                            13000,
+                            500,
+                            "linear",
+                            "${page1-chart-block1}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid93",
+                            "opacity",
+                            11000,
+                            250,
+                            "linear",
+                            "${kid-cry}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid127",
+                            "left",
+                            14000,
+                            500,
+                            "linear",
+                            "${page1-chart-block2}",
+                            '410px',
+                            '539px'
+                        ],
+                            [ "eid152", "trigger", 16000, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${page1}', [] ] ]
+                    ]
+                }
+            },
+            "sym-page2": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            id: 'page1-bg2',
+                            type: 'image',
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/page1-bg.png', '0px', '0px']
+                        },
+                        {
+                            id: 'page2_chart',
+                            type: 'image',
+                            rect: ['185px', '86px', '655px', '597px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/page2_chart.png', '0px', '0px']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1024px', '768px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
                     ]
                 }
             }
