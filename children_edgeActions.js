@@ -16,4 +16,20 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    })("stage");
    //Edge symbol end:'stage'
 
+   //=========================================================
+   
+   //Edge symbol: 'sym-logo'
+   (function(symbolName) {   
+   
+   })("sym-logo");
+   //Edge symbol end:'sym-logo'
+
+   //=========================================================
+   
+   //Edge symbol: 'sym-welcome'
+   (function(symbolName) {   
+   
+   })("sym-welcome");
+   //Edge symbol end:'sym-welcome'
+
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-4782395");
