@@ -383,6 +383,15 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    //Edge symbol: 'sym-page5'
    (function(symbolName) {   
    
+      Symbol.bindElementAction(compId, symbolName, "${sym-page5-button}", "click", function(sym, e) {
+         // insert code for mouse click here
+         // Show an element 
+         sym.$("sym-page5-popup").show();
+         
+
+      });
+      //Edge binding end
+
    })("sym-page5");
    //Edge symbol end:'sym-page5'
 
@@ -393,5 +402,22 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    })("sym-page5-button");
    //Edge symbol end:'sym-page5-button'
+
+   //=========================================================
+   
+   //Edge symbol: 'sym-page4-popup_1'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${sym-page2-popup-close}", "click", function(sym, e) {
+         // insert code for mouse click here
+         // Hide an element 
+         sym.getSymbolElement().hide();
+         
+
+      });
+         //Edge binding end
+
+      })("sym-page5-popup");
+   //Edge symbol end:'sym-page5-popup'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-4782395");

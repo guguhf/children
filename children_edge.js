@@ -76,8 +76,10 @@
                         {
                             id: 'sym-page5',
                             symbolName: 'sym-page5',
+                            display: 'none',
                             type: 'rect',
-                            rect: ['0', '0', '1024', '768', 'auto', 'auto']
+                            rect: ['0', '0', '1024', '768', 'auto', 'auto'],
+                            opacity: '0'
                         },
                         {
                             id: 'background',
@@ -110,7 +112,7 @@
                     }
                 },
                 timeline: {
-                    duration: 67164.25,
+                    duration: 230740.491,
                     autoPlay: true,
                     data: [
                         [
@@ -174,64 +176,24 @@
                             '-198px'
                         ],
                         [
-                            "eid72",
+                            "eid314",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${sym-page1}",
+                            "${sym-page5}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid75",
+                            "eid315",
                             "display",
-                            8011,
+                            99000,
                             0,
                             "linear",
-                            "${sym-page1}",
+                            "${sym-page5}",
                             'none',
                             'block'
-                        ],
-                        [
-                            "eid77",
-                            "opacity",
-                            8011,
-                            239,
-                            "linear",
-                            "${sym-page1}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid154",
-                            "opacity",
-                            38000,
-                            500,
-                            "linear",
-                            "${sym-page1}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid157",
-                            "opacity",
-                            38500,
-                            500,
-                            "linear",
-                            "${sym-page2}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid169",
-                            "opacity",
-                            59000,
-                            500,
-                            "linear",
-                            "${sym-page2}",
-                            '1',
-                            '0'
                         ],
                         [
                             "eid55",
@@ -264,6 +226,96 @@
                             'none'
                         ],
                         [
+                            "eid57",
+                            "opacity",
+                            1000,
+                            250,
+                            "linear",
+                            "${sym-logo}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid72",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${sym-page1}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid75",
+                            "display",
+                            8011,
+                            0,
+                            "linear",
+                            "${sym-page1}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid157",
+                            "opacity",
+                            38500,
+                            500,
+                            "linear",
+                            "${sym-page2}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid169",
+                            "opacity",
+                            59000,
+                            500,
+                            "linear",
+                            "${sym-page2}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid50",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${sym-logo}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid51",
+                            "display",
+                            1000,
+                            0,
+                            "linear",
+                            "${sym-logo}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid77",
+                            "opacity",
+                            8011,
+                            239,
+                            "linear",
+                            "${sym-page1}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid154",
+                            "opacity",
+                            38000,
+                            500,
+                            "linear",
+                            "${sym-page1}",
+                            '1',
+                            '0'
+                        ],
+                        [
                             "eid172",
                             "opacity",
                             59500,
@@ -294,6 +346,26 @@
                             'block'
                         ],
                         [
+                            "eid316",
+                            "opacity",
+                            99000,
+                            500,
+                            "linear",
+                            "${sym-page5}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid53",
+                            "top",
+                            2000,
+                            1000,
+                            "linear",
+                            "${sym-logo}",
+                            '245px',
+                            '-97px'
+                        ],
+                        [
                             "eid170",
                             "display",
                             0,
@@ -310,46 +382,6 @@
                             0,
                             "linear",
                             "${sym-page3}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid57",
-                            "opacity",
-                            1000,
-                            250,
-                            "linear",
-                            "${sym-logo}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid53",
-                            "top",
-                            2000,
-                            1000,
-                            "linear",
-                            "${sym-logo}",
-                            '245px',
-                            '-97px'
-                        ],
-                        [
-                            "eid50",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${sym-logo}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid51",
-                            "display",
-                            1000,
-                            0,
-                            "linear",
-                            "${sym-logo}",
                             'none',
                             'block'
                         ],
@@ -1968,72 +2000,72 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             id: 'page3-bg2',
                             type: 'image',
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page3-bg.png', '0px', '0px']
                         },
                         {
-                            rect: ['161px', '402px', '105px', '290px', 'auto', 'auto'],
                             id: 'left-kid',
                             type: 'image',
+                            rect: ['161px', '402px', '105px', '290px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/left-kid.png', '0px', '0px']
                         },
                         {
-                            rect: ['783px', '65px', '137px', '375px', 'auto', 'auto'],
                             id: 'right-kid2',
                             type: 'image',
+                            rect: ['783px', '65px', '137px', '375px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/right-kid.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0', '0']],
-                            type: 'image',
-                            id: 'page4-chart',
-                            display: 'block',
                             rect: ['198px', '180px', '628px', '409px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'page4-chart',
+                            type: 'image',
+                            display: 'block',
                             fill: ['rgba(0,0,0,0)', 'images/page4-chart.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
                             rect: ['357px', '282px', '101px', '246px', 'auto', 'auto'],
-                            display: 'block',
+                            type: 'image',
                             id: 'page4-chart-block1',
+                            display: 'block',
                             clip: 'rect(246px 101px 246px 0px)',
                             fill: ['rgba(0,0,0,0)', 'images/page4-chart-block1.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
                             rect: ['623px', '282px', '101px', '246px', 'auto', 'auto'],
-                            display: 'block',
+                            type: 'image',
                             id: 'page4-chart-block2',
+                            display: 'block',
                             clip: 'rect(246px 101px 246px 0px)',
                             fill: ['rgba(0,0,0,0)', 'images/page4-chart-block2.png', '0px', '0px']
                         },
                         {
-                            type: 'text',
-                            id: 'Text15',
-                            text: '4. Garcia ML, et al. Montelukast, Compared with Fluticasone, for the Treatment of Persistent Asthma among 6-to 14-Year-Old Patients with Mild Asthma: The MOSAIC Study. Pediatrics. 2005;116:360-369.',
                             font: ['Arial, Helvetica, sans-serif', [12, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
-                            display: 'block',
                             rect: ['198px', '635px', '628px', '38px', 'auto', 'auto'],
+                            align: 'left',
+                            text: '4. Garcia ML, et al. Montelukast, Compared with Fluticasone, for the Treatment of Persistent Asthma among 6-to 14-Year-Old Patients with Mild Asthma: The MOSAIC Study. Pediatrics. 2005;116:360-369.',
+                            id: 'Text15',
                             opacity: '0',
-                            align: 'left'
-                        },
-                        {
-                            rect: ['737px', '599px', null, null, 'auto', 'auto'],
-                            id: 'sym-page4-button',
-                            symbolName: 'sym-page4-button',
                             display: 'block',
-                            opacity: '0',
-                            cursor: 'pointer',
-                            type: 'rect'
+                            type: 'text'
                         },
                         {
-                            rect: ['225px', '273px', null, null, 'auto', 'auto'],
+                            type: 'rect',
+                            opacity: '0',
+                            rect: ['737px', '599px', null, null, 'auto', 'auto'],
+                            display: 'block',
+                            symbolName: 'sym-page4-button',
+                            cursor: 'pointer',
+                            id: 'sym-page4-button'
+                        },
+                        {
+                            type: 'rect',
                             display: 'block',
                             symbolName: 'sym-page4-popup',
-                            id: 'sym-page4-popup',
-                            type: 'rect'
+                            rect: ['225px', '273px', null, null, 'auto', 'auto'],
+                            id: 'sym-page4-popup'
                         },
                         {
                             preload: 'auto',
@@ -2047,7 +2079,8 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1024px', '768px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1024px', '768px']
                         }
                     }
                 },
@@ -2352,61 +2385,266 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             id: 'page3-bg3',
                             type: 'image',
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page3-bg.png', '0px', '0px']
                         },
                         {
-                            rect: ['161px', '122px', '105px', '290px', 'auto', 'auto'],
                             id: 'left-kid2',
                             type: 'image',
+                            rect: ['161px', '122px', '105px', '290px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/left-kid.png', '0px', '0px']
                         },
                         {
-                            rect: ['783px', '65px', '137px', '375px', 'auto', 'auto'],
                             id: 'right-kid3',
                             type: 'image',
+                            rect: ['783px', '65px', '137px', '375px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/right-kid.png', '0px', '0px']
                         },
                         {
                             font: ['Arial, Helvetica, sans-serif', [12, 'px'], 'rgba(0,0,0,1)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
-                            type: 'text',
-                            id: 'Text16',
-                            text: '5. Szefler SJ, et al. J Allergy Clin Immunol 2007;120(5):1043-1050.',
+                            rect: ['200px', '555px', 'auto', 'auto', 'auto', 'auto'],
                             align: 'left',
-                            rect: ['200px', '555px', 'auto', 'auto', 'auto', 'auto']
+                            text: '5. Szefler SJ, et al. J Allergy Clin Immunol 2007;120(5):1043-1050.',
+                            id: 'Text16',
+                            opacity: '0',
+                            display: 'block',
+                            type: 'text'
                         },
                         {
                             rect: ['200px', '119px', '624px', '409px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
                             id: 'page5-chart',
                             type: 'image',
+                            display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/page5-chart.png', '0px', '0px']
                         },
                         {
                             rect: ['293px', '228px', '485px', '201px', 'auto', 'auto'],
-                            id: 'page5-line',
                             type: 'image',
+                            id: 'page5-line',
+                            display: 'block',
+                            clip: 'rect(0px 0px 201px 0px)',
                             fill: ['rgba(0,0,0,0)', 'images/page5-line.png', '0px', '0px']
                         },
                         {
                             rect: ['298px', '228', '485px', '201px', 'auto', 'auto'],
-                            id: 'page5-desc',
                             type: 'image',
+                            id: 'page5-desc',
+                            opacity: '0',
+                            display: 'block',
                             fill: ['rgba(0,0,0,0)', 'images/page5-desc.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
+                            opacity: '0',
+                            rect: ['733px', '547px', undefined, undefined, 'auto', 'auto'],
+                            display: 'block',
+                            symbolName: 'sym-page5-button',
+                            cursor: 'pointer',
+                            id: 'sym-page5-button'
+                        },
+                        {
+                            type: 'rect',
+                            display: 'none',
+                            symbolName: 'sym-page5-popup',
+                            rect: ['225px', '197px', undefined, undefined, 'auto', 'auto'],
+                            id: 'sym-page5-popup'
+                        },
+                        {
+                            preload: 'auto',
+                            type: 'audio',
+                            source: ['media/page5.mp3'],
+                            id: 'page5',
+                            rect: ['266', '196', '320px', '45px', 'auto', 'auto'],
+                            display: 'none',
+                            tag: 'audio'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1024px', '768px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1024px', '768px']
                         }
                     }
                 },
                 timeline: {
-                    duration: 0,
+                    duration: 131092.5,
                     autoPlay: true,
                     data: [
-
+                        [
+                            "eid322",
+                            "display",
+                            99500,
+                            0,
+                            "linear",
+                            "${Text16}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid335",
+                            "display",
+                            101500,
+                            0,
+                            "linear",
+                            "${Text16}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid340",
+                            "opacity",
+                            101500,
+                            500,
+                            "linear",
+                            "${sym-page5-button}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid319",
+                            "display",
+                            99500,
+                            0,
+                            "linear",
+                            "${page5-desc}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid332",
+                            "display",
+                            101000,
+                            0,
+                            "linear",
+                            "${page5-desc}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid313",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${sym-page5-popup}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid317",
+                            "display",
+                            99500,
+                            0,
+                            "linear",
+                            "${sym-page5-popup}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid320",
+                            "display",
+                            99500,
+                            0,
+                            "linear",
+                            "${page5-line}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid329",
+                            "display",
+                            100000,
+                            0,
+                            "linear",
+                            "${page5-line}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid334",
+                            "opacity",
+                            101000,
+                            500,
+                            "linear",
+                            "${page5-desc}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid337",
+                            "opacity",
+                            101500,
+                            500,
+                            "linear",
+                            "${Text16}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid328",
+                            "scaleY",
+                            99500,
+                            500,
+                            "linear",
+                            "${page5-chart}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid327",
+                            "scaleX",
+                            99500,
+                            500,
+                            "linear",
+                            "${page5-chart}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid318",
+                            "display",
+                            99500,
+                            0,
+                            "linear",
+                            "${sym-page5-button}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid338",
+                            "display",
+                            101500,
+                            0,
+                            "linear",
+                            "${sym-page5-button}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid331",
+                            "clip",
+                            100000,
+                            1000,
+                            "linear",
+                            "${page5-line}",
+                            [0,0,201,0],
+                            [0,485,201,0],
+                            {valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'}
+                        ],
+                        [
+                            "eid321",
+                            "display",
+                            99500,
+                            0,
+                            "linear",
+                            "${page5-chart}",
+                            'none',
+                            'block'
+                        ],
+                            [ "eid341", "trigger", 100000, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${page5}', [] ] ]
                     ]
                 }
             },
@@ -2439,6 +2677,55 @@
                     style: {
                         '${symbolSelector}': {
                             rect: [null, null, '89px', '29px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-page5-popup": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '20px', '563px', '285px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            boxShadow: ['', 3, 3, 3, 0, 'rgba(0,0,0,0.65098)'],
+                            id: 'RoundRect2',
+                            stroke: [1, 'rgba(0,0,255,1.00)', 'solid'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        },
+                        {
+                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto'],
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
+                            id: 'Text7',
+                            text: '一项为期52周的多中心、随机、对照的开放性研究，共纳入395例2-8岁的轻度持续性哮喘或反复性哮喘患儿，随机吸入布地奈德0.5mg qd（n=197）或口服孟鲁司特4mg或5mg qd（n=198）治疗52周。轻度哮喘急性发作时，患者每日加用1次布地奈德0.5mg雾化吸入治疗，持续14天，重度发作时，患者接受口服激素治疗，持续3-10天。主要疗效终点为52周内因哮喘急性发作而第一次加用其他哮喘药物的时间。次要终点包括12周和26周时第一次加用其他药物的时间，12周、26周和52周时第一次哮喘发作（轻度和重度）的时间，52周内哮喘发作，日记参数（如呼气峰流速PEF），或者报告的结果和医生、护士的评估。',
+                            align: 'left',
+                            type: 'text'
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-page2-popup-close',
+                            symbolName: 'sym-page2-popup-close',
+                            cursor: 'pointer',
+                            rect: ['536', '0', '38', '38', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '574px', '187px']
                         }
                     }
                 },
