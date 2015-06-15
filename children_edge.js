@@ -59,6 +59,27 @@
                             opacity: '0'
                         },
                         {
+                            id: 'sym-page3',
+                            symbolName: 'sym-page3',
+                            display: 'none',
+                            type: 'rect',
+                            rect: ['0', '0', '1024', '768', 'auto', 'auto'],
+                            opacity: '0'
+                        },
+                        {
+                            id: 'sym-page4',
+                            symbolName: 'sym-page4',
+                            display: 'none',
+                            type: 'rect',
+                            rect: ['0', '0', '1024', '768', 'auto', 'auto']
+                        },
+                        {
+                            id: 'sym-page5',
+                            symbolName: 'sym-page5',
+                            type: 'rect',
+                            rect: ['0', '0', '1024', '768', 'auto', 'auto']
+                        },
+                        {
                             id: 'background',
                             display: 'none',
                             volume: '0.3',
@@ -89,7 +110,7 @@
                     }
                 },
                 timeline: {
-                    duration: 230740.491,
+                    duration: 67164.25,
                     autoPlay: true,
                     data: [
                         [
@@ -153,6 +174,26 @@
                             '-198px'
                         ],
                         [
+                            "eid72",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${sym-page1}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid75",
+                            "display",
+                            8011,
+                            0,
+                            "linear",
+                            "${sym-page1}",
+                            'none',
+                            'block'
+                        ],
+                        [
                             "eid77",
                             "opacity",
                             8011,
@@ -169,6 +210,26 @@
                             500,
                             "linear",
                             "${sym-page1}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid157",
+                            "opacity",
+                            38500,
+                            500,
+                            "linear",
+                            "${sym-page2}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid169",
+                            "opacity",
+                            59000,
+                            500,
+                            "linear",
+                            "${sym-page2}",
                             '1',
                             '0'
                         ],
@@ -193,12 +254,22 @@
                             '0'
                         ],
                         [
-                            "eid157",
+                            "eid277",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${sym-page4}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid172",
                             "opacity",
-                            38500,
+                            59500,
                             500,
                             "linear",
-                            "${sym-page2}",
+                            "${sym-page3}",
                             '0',
                             '1'
                         ],
@@ -223,22 +294,22 @@
                             'block'
                         ],
                         [
-                            "eid72",
+                            "eid170",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${sym-page1}",
+                            "${sym-page3}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid75",
+                            "eid171",
                             "display",
-                            8011,
+                            59500,
                             0,
                             "linear",
-                            "${sym-page1}",
+                            "${sym-page3}",
                             'none',
                             'block'
                         ],
@@ -282,6 +353,7 @@
                             'none',
                             'block'
                         ],
+                            [ "eid278", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${sym-page4}', [] ] ],
                             [ "eid62", "trigger", 3250, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${background}', [] ] ]
                     ]
                 }
@@ -296,42 +368,41 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '216px', 'auto', 'auto', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
                             id: 'Text5',
                             text: '（孟鲁司特纳 . 默沙东）',
                             align: 'left',
-                            type: 'text'
+                            rect: ['0px', '216px', 'auto', 'auto', 'auto', 'auto']
                         },
                         {
-                            rect: ['22px', '0px', 'auto', 'auto', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
                             id: 'Text',
                             text: '每日一次',
                             align: 'left',
-                            type: 'text'
+                            rect: ['22px', '0px', 'auto', 'auto', 'auto', 'auto']
                         },
                         {
-                            rect: ['22px', '71px', 'auto', 'auto', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [120, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
                             id: 'Text2',
                             text: '顺尔宁',
                             align: 'left',
-                            type: 'text'
+                            rect: ['22px', '71px', 'auto', 'auto', 'auto', 'auto']
                         },
                         {
-                            rect: ['400px', '81px', 'auto', 'auto', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
                             id: 'Text4',
                             text: '®',
                             align: 'left',
-                            type: 'text'
+                            rect: ['400px', '81px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '542px', '274px']
+                            rect: [null, null, '542px', '274px']
                         }
                     }
                 },
@@ -353,9 +424,9 @@
                 content: {
                     dom: [
                         {
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             id: 'welcom-bg',
                             type: 'image',
-                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/welcom-bg.png', '0px', '0px']
                         },
                         {
@@ -368,23 +439,22 @@
                             tag: 'audio'
                         },
                         {
-                            rect: ['229px', '52px', '435px', '125px', 'auto', 'auto'],
-                            id: 'txt-welcome',
                             type: 'image',
+                            id: 'txt-welcome',
+                            rect: ['229px', '52px', '435px', '125px', 'auto', 'auto'],
                             clip: 'rect(0px 0px 125px 0px)',
                             fill: ['rgba(0,0,0,0)', 'images/txt-welcome.png', '0px', '0px']
                         },
                         {
+                            rect: ['798px', '81px', '97px', '196px', 'auto', 'auto'],
                             id: 'blank-balloon',
                             type: 'image',
-                            rect: ['798px', '81px', '97px', '196px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/blank-balloon.png', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '1024px', '768px']
+                            rect: [null, null, '1024px', '768px']
                         }
                     }
                 },
@@ -427,76 +497,76 @@
                 content: {
                     dom: [
                         {
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             id: 'page1-bg',
                             type: 'image',
-                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page1-bg.png', '0px', '0px']
                         },
                         {
-                            rect: ['387px', '557', '115px', '152px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['387px', '557', '115px', '152px', 'auto', 'auto'],
                             id: 'kid-cry',
                             opacity: '1',
                             display: 'block',
                             fill: ['rgba(0,0,0,0)', 'images/kid-cry.png', '0px', '0px']
                         },
                         {
-                            rect: ['387', '557', '116px', '153px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['387', '557', '116px', '153px', 'auto', 'auto'],
                             id: 'kid-smile-2',
                             opacity: '0',
                             display: 'block',
                             fill: ['rgba(0,0,0,0)', 'images/kid-smile-2.png', '0px', '0px']
                         },
                         {
-                            rect: ['386px', '557px', '115px', '152px', 'auto', 'auto'],
-                            id: 'kid-smile-1',
                             type: 'image',
                             display: 'block',
+                            rect: ['386px', '557px', '115px', '152px', 'auto', 'auto'],
+                            id: 'kid-smile-1',
                             fill: ['rgba(0,0,0,0)', 'images/kid-smile-1.png', '0px', '0px']
                         },
                         {
+                            rect: ['364px', '566px', '67px', '61px', 'auto', 'auto'],
                             id: 'cherry-ltra2',
                             type: 'image',
-                            rect: ['364px', '566px', '67px', '61px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cherry-ltra2.png', '0px', '0px']
                         },
                         {
+                            rect: ['622px', '442px', '63px', '62px', 'auto', 'auto'],
                             id: 'cherry2',
                             type: 'image',
-                            rect: ['622px', '442px', '63px', '62px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cherry.png', '0px', '0px']
                         },
                         {
-                            rect: ['175px', '86px', '655px', '597px', 'auto', 'auto'],
                             transform: [[], [], [], ['0', '0']],
-                            id: 'page1-chart',
                             type: 'image',
+                            id: 'page1-chart',
                             display: 'block',
+                            rect: ['175px', '86px', '655px', '597px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart.png', '0px', '0px']
                         },
                         {
-                            rect: ['398px', '566px', '91px', '50px', 'auto', 'auto'],
                             transform: [[], [], [], ['0', '0']],
-                            id: 'page1-chart-block3',
                             type: 'image',
+                            id: 'page1-chart-block3',
                             display: 'block',
+                            rect: ['398px', '566px', '91px', '50px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart-block3.png', '0px', '0px']
                         },
                         {
-                            rect: ['410px', '588px', '92px', '39px', 'auto', 'auto'],
                             transform: [[], [], [], ['0', '0']],
-                            id: 'page1-chart-block2',
                             type: 'image',
+                            id: 'page1-chart-block2',
                             display: 'block',
+                            rect: ['410px', '588px', '92px', '39px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart-block2.png', '0px', '0px']
                         },
                         {
-                            rect: ['410px', '583px', '92px', '28px', 'auto', 'auto'],
                             transform: [[], [], [], ['0', '0']],
-                            id: 'page1-chart-block1',
                             type: 'image',
+                            id: 'page1-chart-block1',
                             display: 'block',
+                            rect: ['410px', '583px', '92px', '28px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart-block1.png', '0px', '0px']
                         },
                         {
@@ -511,8 +581,7 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '1024px', '768px']
+                            rect: [null, null, '1024px', '768px']
                         }
                     }
                 },
@@ -521,34 +590,14 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid80",
-                            "display",
-                            8250,
-                            0,
+                            "eid140",
+                            "left",
+                            15000,
+                            500,
                             "linear",
-                            "${kid-smile-2}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid94",
-                            "display",
-                            11000,
-                            0,
-                            "linear",
-                            "${kid-smile-2}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid86",
-                            "display",
-                            11250,
-                            0,
-                            "linear",
-                            "${kid-smile-2}",
-                            'block',
-                            'block'
+                            "${page1-chart-block3}",
+                            '398px',
+                            '539px'
                         ],
                         [
                             "eid99",
@@ -601,34 +650,24 @@
                             'block'
                         ],
                         [
-                            "eid116",
+                            "eid143",
                             "scaleY",
-                            13000,
+                            15000,
                             500,
                             "linear",
-                            "${page1-chart-block1}",
+                            "${page1-chart-block3}",
                             '0',
                             '1'
                         ],
                         [
-                            "eid98",
-                            "display",
-                            8250,
-                            0,
+                            "eid150",
+                            "scaleY",
+                            16000,
+                            500,
                             "linear",
-                            "${page1-chart-block1}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid101",
-                            "display",
-                            13000,
-                            0,
-                            "linear",
-                            "${page1-chart-block1}",
-                            'none',
-                            'block'
+                            "${page1-chart}",
+                            '0',
+                            '1'
                         ],
                         [
                             "eid114",
@@ -671,24 +710,34 @@
                             'block'
                         ],
                         [
-                            "eid150",
-                            "scaleY",
-                            16000,
-                            500,
+                            "eid98",
+                            "display",
+                            8250,
+                            0,
                             "linear",
-                            "${page1-chart}",
-                            '0',
-                            '1'
+                            "${page1-chart-block1}",
+                            'block',
+                            'none'
                         ],
                         [
-                            "eid143",
-                            "scaleY",
-                            15000,
-                            500,
+                            "eid101",
+                            "display",
+                            13000,
+                            0,
                             "linear",
-                            "${page1-chart-block3}",
-                            '0',
-                            '1'
+                            "${page1-chart-block1}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid93",
+                            "opacity",
+                            11000,
+                            250,
+                            "linear",
+                            "${kid-cry}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid79",
@@ -711,34 +760,34 @@
                             '566px'
                         ],
                         [
-                            "eid142",
+                            "eid115",
                             "scaleX",
-                            15000,
+                            13000,
                             500,
                             "linear",
-                            "${page1-chart-block3}",
+                            "${page1-chart-block1}",
                             '0',
                             '1'
                         ],
                         [
-                            "eid140",
-                            "left",
-                            15000,
-                            500,
+                            "eid96",
+                            "opacity",
+                            11000,
+                            250,
                             "linear",
-                            "${page1-chart-block3}",
-                            '398px',
-                            '539px'
-                        ],
-                        [
-                            "eid130",
-                            "scaleY",
-                            14000,
-                            500,
-                            "linear",
-                            "${page1-chart-block2}",
+                            "${kid-smile-2}",
                             '0',
                             '1'
+                        ],
+                        [
+                            "eid82",
+                            "display",
+                            10587,
+                            0,
+                            "linear",
+                            "${kid-smile-1}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid113",
@@ -801,44 +850,64 @@
                             '310px'
                         ],
                         [
-                            "eid82",
+                            "eid80",
                             "display",
-                            10587,
+                            8250,
                             0,
                             "linear",
-                            "${kid-smile-1}",
+                            "${kid-smile-2}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid96",
-                            "opacity",
+                            "eid94",
+                            "display",
                             11000,
-                            250,
+                            0,
                             "linear",
                             "${kid-smile-2}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid86",
+                            "display",
+                            11250,
+                            0,
+                            "linear",
+                            "${kid-smile-2}",
+                            'block',
+                            'block'
+                        ],
+                        [
+                            "eid130",
+                            "scaleY",
+                            14000,
+                            500,
+                            "linear",
+                            "${page1-chart-block2}",
                             '0',
                             '1'
                         ],
                         [
-                            "eid115",
+                            "eid142",
                             "scaleX",
+                            15000,
+                            500,
+                            "linear",
+                            "${page1-chart-block3}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid116",
+                            "scaleY",
                             13000,
                             500,
                             "linear",
                             "${page1-chart-block1}",
                             '0',
                             '1'
-                        ],
-                        [
-                            "eid93",
-                            "opacity",
-                            11000,
-                            250,
-                            "linear",
-                            "${kid-cry}",
-                            '1',
-                            '0'
                         ],
                         [
                             "eid127",
@@ -864,22 +933,1512 @@
                 content: {
                     dom: [
                         {
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             id: 'page1-bg2',
                             type: 'image',
-                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page1-bg.png', '0px', '0px']
                         },
                         {
+                            transform: [[], [], [], ['0', '0']],
                             id: 'page2_chart',
                             type: 'image',
                             rect: ['185px', '86px', '655px', '597px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page2_chart.png', '0px', '0px']
+                        },
+                        {
+                            preload: 'auto',
+                            type: 'audio',
+                            source: ['media/page2.mp3'],
+                            id: 'page2',
+                            rect: ['574', '434', '320px', '45px', 'auto', 'auto'],
+                            display: 'none',
+                            tag: 'audio'
+                        },
+                        {
+                            rect: ['698', '587', '89', '29', 'auto', 'auto'],
+                            id: 'sym-page2-button',
+                            display: 'block',
+                            symbolName: 'sym-page2-button',
+                            cursor: 'pointer',
+                            type: 'rect'
+                        },
+                        {
+                            rect: ['231', '268', '574', '187', 'auto', 'auto'],
+                            display: 'block',
+                            symbolName: 'sym-page2-popup',
+                            id: 'sym-page2-popup',
+                            type: 'rect'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '1024px', '768px']
+                            rect: [null, null, '1024px', '768px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 56878.25,
+                    autoPlay: true,
+                    data: [
+                        [
+                            "eid162",
+                            "scaleX",
+                            39000,
+                            500,
+                            "linear",
+                            "${page2_chart}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid163",
+                            "scaleY",
+                            39000,
+                            500,
+                            "linear",
+                            "${page2_chart}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid165",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${sym-page2-popup}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid166",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${sym-page2-button}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid167",
+                            "display",
+                            39500,
+                            0,
+                            "linear",
+                            "${sym-page2-button}",
+                            'none',
+                            'block'
+                        ],
+                            [ "eid164", "trigger", 39500, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${page2}', [] ] ]
+                    ]
+                }
+            },
+            "sym-page2-button": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '89px', '29px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect',
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(16,2,247,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text6',
+                            text: '研究设计',
+                            align: 'left',
+                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '89px', '29px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-page2-popup": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '20px', '563px', '150px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            fill: ['rgba(255,255,255,1.00)'],
+                            id: 'RoundRect2',
+                            stroke: [1, 'rgba(0,0,255,1.00)', 'solid'],
+                            type: 'rect',
+                            boxShadow: ['', 3, 3, 3, 0, 'rgba(0,0,0,0.65098)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
+                            type: 'text',
+                            id: 'Text7',
+                            text: '一项多国、随机、双盲、安慰剂对照的平行分组研究，共纳入689名2-5岁持续性哮喘患儿。2周单盲、安慰剂导入期后，或者随机接受孟鲁司特4mg/日（n=461）或安慰剂（n=228）治疗12周。主要研究终点包括：日、夜间哮喘症状、β激动剂使用、无哮喘天、哮喘发作频率等。',
+                            align: 'left',
+                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-page2-popup-close',
+                            symbolName: 'sym-page2-popup-close',
+                            cursor: 'pointer',
+                            rect: ['536', '0', '38', '38', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '574px', '187px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-page2-popup-close": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '38px', '38px', 'auto', 'auto'],
+                            borderRadius: ['50%', '50%', '50%', '50%'],
+                            id: 'Ellipse',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'ellipse',
+                            fill: ['rgba(255,173,0,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [20, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text8',
+                            text: 'X',
+                            align: 'left',
+                            rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '38px', '38px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-page3": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
+                            id: 'page3-bg',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/page3-bg.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['346px', '74px', '329px', '89px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect3',
+                            stroke: [1, 'rgb(0, 0, 255)', 'solid'],
+                            type: 'rect',
+                            fill: ['rgba(10,26,252,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [40, 'px'], 'rgba(255,255,255,1)', '700', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text9',
+                            text: '调研问卷',
+                            align: 'left',
+                            rect: ['432px', '97px', 'auto', 'auto', 'auto', 'auto']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1.00)', '500', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text10',
+                            text: '您认可孟鲁司特纳在轻度持续性哮喘治疗中与ICS疗效相当吗？',
+                            align: 'left',
+                            rect: ['96px', '220px', 'auto', 'auto', 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-1',
+                            symbolName: 'sym-1',
+                            cursor: 'pointer',
+                            rect: ['218px', '336px', '48', '48', 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-10',
+                            symbolName: 'sym-10',
+                            cursor: 'pointer',
+                            rect: ['758px', '336px', null, null, 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-2',
+                            symbolName: 'sym-2',
+                            cursor: 'pointer',
+                            rect: ['278px', '336px', null, null, 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-3',
+                            symbolName: 'sym-3',
+                            cursor: 'pointer',
+                            rect: ['338px', '336px', null, null, 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-4',
+                            symbolName: 'sym-4',
+                            cursor: 'pointer',
+                            rect: ['398px', '336px', null, null, 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-5',
+                            symbolName: 'sym-5',
+                            cursor: 'pointer',
+                            rect: ['458px', '336px', null, null, 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-6',
+                            symbolName: 'sym-6',
+                            cursor: 'pointer',
+                            rect: ['518px', '336px', null, null, 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-7',
+                            symbolName: 'sym-7',
+                            cursor: 'pointer',
+                            rect: ['578px', '336px', null, null, 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-8',
+                            symbolName: 'sym-8',
+                            cursor: 'pointer',
+                            rect: ['638px', '336px', null, null, 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-9',
+                            symbolName: 'sym-9',
+                            cursor: 'pointer',
+                            rect: ['698px', '336px', null, null, 'auto', 'auto']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text12',
+                            text: '不是',
+                            align: 'left',
+                            rect: ['85px', '343px', 'auto', 'auto', 'auto', 'auto']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text13',
+                            text: '是',
+                            align: 'left',
+                            rect: ['870', '343px', 'auto', 'auto', 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-page3-button',
+                            symbolName: 'sym-page3-button',
+                            cursor: 'pointer',
+                            rect: ['431', '460', '160', '48', 'auto', 'auto']
+                        },
+                        {
+                            preload: 'auto',
+                            type: 'audio',
+                            source: ['media/page3.mp3'],
+                            id: 'page3',
+                            rect: ['302', '328', '320px', '45px', 'auto', 'auto'],
+                            display: 'none',
+                            tag: 'audio'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '1024px', '768px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 67164.25,
+                    autoPlay: true,
+                    data: [
+                        [
+                            "eid260",
+                            "left",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-9}",
+                            '698px',
+                            '698px'
+                        ],
+                        [
+                            "eid274",
+                            "left",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-6}",
+                            '518px',
+                            '518px'
+                        ],
+                        [
+                            "eid257",
+                            "top",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-10}",
+                            '336px',
+                            '336px'
+                        ],
+                        [
+                            "eid256",
+                            "left",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-10}",
+                            '758px',
+                            '758px'
+                        ],
+                        [
+                            "eid263",
+                            "top",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-1}",
+                            '336px',
+                            '336px'
+                        ],
+                        [
+                            "eid262",
+                            "left",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-1}",
+                            '218px',
+                            '218px'
+                        ],
+                        [
+                            "eid275",
+                            "top",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-6}",
+                            '336px',
+                            '336px'
+                        ],
+                        [
+                            "eid258",
+                            "left",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-4}",
+                            '398px',
+                            '398px'
+                        ],
+                        [
+                            "eid271",
+                            "top",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-5}",
+                            '336px',
+                            '336px'
+                        ],
+                        [
+                            "eid267",
+                            "top",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-2}",
+                            '336px',
+                            '336px'
+                        ],
+                        [
+                            "eid264",
+                            "left",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-3}",
+                            '338px',
+                            '338px'
+                        ],
+                        [
+                            "eid273",
+                            "top",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-8}",
+                            '336px',
+                            '336px'
+                        ],
+                        [
+                            "eid270",
+                            "left",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-5}",
+                            '458px',
+                            '458px'
+                        ],
+                        [
+                            "eid265",
+                            "top",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-3}",
+                            '336px',
+                            '336px'
+                        ],
+                        [
+                            "eid272",
+                            "left",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-8}",
+                            '638px',
+                            '638px'
+                        ],
+                        [
+                            "eid269",
+                            "top",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-7}",
+                            '336px',
+                            '336px'
+                        ],
+                        [
+                            "eid261",
+                            "top",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-9}",
+                            '336px',
+                            '336px'
+                        ],
+                        [
+                            "eid268",
+                            "left",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-7}",
+                            '578px',
+                            '578px'
+                        ],
+                        [
+                            "eid266",
+                            "left",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-2}",
+                            '278px',
+                            '278px'
+                        ],
+                        [
+                            "eid259",
+                            "top",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-4}",
+                            '336px',
+                            '336px'
+                        ],
+                            [ "eid276", "trigger", 60000, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${page3}', [] ] ]
+                    ]
+                }
+            },
+            "sym-1": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '48px', '48px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect4',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(191,239,251,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text11',
+                            text: '1',
+                            align: 'left',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '48px', '48px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-2": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '48px', '48px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect4',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(191,239,251,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text11',
+                            text: '2',
+                            align: 'left',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '48px', '48px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-3": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '48px', '48px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect4',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(191,239,251,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text11',
+                            text: '3',
+                            align: 'left',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '48px', '48px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-4": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '48px', '48px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect4',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(191,239,251,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text11',
+                            text: '4',
+                            align: 'left',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '48px', '48px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-5": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '48px', '48px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect4',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(191,239,251,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text11',
+                            text: '5',
+                            align: 'left',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '48px', '48px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-6": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '48px', '48px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect4',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(191,239,251,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text11',
+                            text: '6',
+                            align: 'left',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '48px', '48px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-7": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '48px', '48px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect4',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(191,239,251,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text11',
+                            text: '7',
+                            align: 'left',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '48px', '48px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-8": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '48px', '48px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect4',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(191,239,251,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text11',
+                            text: '8',
+                            align: 'left',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '48px', '48px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-9": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '48px', '48px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect4',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(191,239,251,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text11',
+                            text: '9',
+                            align: 'left',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '48px', '48px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-10": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '48px', '48px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect4',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(191,239,251,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text11',
+                            text: '10',
+                            align: 'left',
+                            rect: ['7px', '7px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '48px', '48px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-page3-button": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '160px', '48px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect5',
+                            stroke: [1, 'rgb(0, 0, 255)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(0,34,242,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(255,255,255,1.00)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text14',
+                            text: '提   交',
+                            align: 'left',
+                            rect: ['46px', '7px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '160px', '48px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-page4": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
+                            id: 'page3-bg2',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/page3-bg.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['161px', '402px', '105px', '290px', 'auto', 'auto'],
+                            id: 'left-kid',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/left-kid.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['783px', '65px', '137px', '375px', 'auto', 'auto'],
+                            id: 'right-kid2',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/right-kid.png', '0px', '0px']
+                        },
+                        {
+                            transform: [[], [], [], ['0', '0']],
+                            type: 'image',
+                            id: 'page4-chart',
+                            display: 'block',
+                            rect: ['198px', '180px', '628px', '409px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/page4-chart.png', '0px', '0px']
+                        },
+                        {
+                            type: 'image',
+                            rect: ['357px', '282px', '101px', '246px', 'auto', 'auto'],
+                            display: 'block',
+                            id: 'page4-chart-block1',
+                            clip: 'rect(246px 101px 246px 0px)',
+                            fill: ['rgba(0,0,0,0)', 'images/page4-chart-block1.png', '0px', '0px']
+                        },
+                        {
+                            type: 'image',
+                            rect: ['623px', '282px', '101px', '246px', 'auto', 'auto'],
+                            display: 'block',
+                            id: 'page4-chart-block2',
+                            clip: 'rect(246px 101px 246px 0px)',
+                            fill: ['rgba(0,0,0,0)', 'images/page4-chart-block2.png', '0px', '0px']
+                        },
+                        {
+                            type: 'text',
+                            id: 'Text15',
+                            text: '4. Garcia ML, et al. Montelukast, Compared with Fluticasone, for the Treatment of Persistent Asthma among 6-to 14-Year-Old Patients with Mild Asthma: The MOSAIC Study. Pediatrics. 2005;116:360-369.',
+                            font: ['Arial, Helvetica, sans-serif', [12, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
+                            display: 'block',
+                            rect: ['198px', '635px', '628px', '38px', 'auto', 'auto'],
+                            opacity: '0',
+                            align: 'left'
+                        },
+                        {
+                            rect: ['737px', '599px', null, null, 'auto', 'auto'],
+                            id: 'sym-page4-button',
+                            symbolName: 'sym-page4-button',
+                            display: 'block',
+                            opacity: '0',
+                            cursor: 'pointer',
+                            type: 'rect'
+                        },
+                        {
+                            rect: ['225px', '273px', null, null, 'auto', 'auto'],
+                            display: 'block',
+                            symbolName: 'sym-page4-popup',
+                            id: 'sym-page4-popup',
+                            type: 'rect'
+                        },
+                        {
+                            preload: 'auto',
+                            type: 'audio',
+                            source: ['media/page4.mp3'],
+                            id: 'page4',
+                            rect: ['373', '169', '320px', '45px', 'auto', 'auto'],
+                            display: 'none',
+                            tag: 'audio'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '1024px', '768px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 96789.75,
+                    autoPlay: false,
+                    labels: {
+                        "play-point": 67500
+                    },
+                    data: [
+                        [
+                            "eid281",
+                            "display",
+                            67500,
+                            0,
+                            "linear",
+                            "${page4-chart}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid287",
+                            "display",
+                            70500,
+                            0,
+                            "linear",
+                            "${page4-chart}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid284",
+                            "display",
+                            67500,
+                            0,
+                            "linear",
+                            "${Text15}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid305",
+                            "display",
+                            72000,
+                            0,
+                            "linear",
+                            "${Text15}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid309",
+                            "opacity",
+                            72000,
+                            500,
+                            "linear",
+                            "${sym-page4-button}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid304",
+                            "clip",
+                            71000,
+                            1000,
+                            "linear",
+                            "${page4-chart-block2}",
+                            [246,101,246,0],
+                            [0,101,246,0],
+                            {valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'}
+                        ],
+                        [
+                            "eid293",
+                            "scaleY",
+                            70500,
+                            500,
+                            "linear",
+                            "${page4-chart}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid286",
+                            "display",
+                            67500,
+                            0,
+                            "linear",
+                            "${page4-chart-block1}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid294",
+                            "display",
+                            71000,
+                            0,
+                            "linear",
+                            "${page4-chart-block1}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid307",
+                            "opacity",
+                            72000,
+                            500,
+                            "linear",
+                            "${Text15}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid279",
+                            "top",
+                            67500,
+                            3000,
+                            "linear",
+                            "${left-kid}",
+                            '402px',
+                            '122px'
+                        ],
+                        [
+                            "eid297",
+                            "clip",
+                            71000,
+                            1000,
+                            "linear",
+                            "${page4-chart-block1}",
+                            [246,101,246,0],
+                            [0,101,246,0],
+                            {valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'}
+                        ],
+                        [
+                            "eid292",
+                            "scaleX",
+                            70500,
+                            500,
+                            "linear",
+                            "${page4-chart}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid280",
+                            "top",
+                            67500,
+                            3000,
+                            "linear",
+                            "${right-kid2}",
+                            '335px',
+                            '65px'
+                        ],
+                        [
+                            "eid282",
+                            "display",
+                            67500,
+                            0,
+                            "linear",
+                            "${sym-page4-popup}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid285",
+                            "display",
+                            67500,
+                            0,
+                            "linear",
+                            "${page4-chart-block2}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid298",
+                            "display",
+                            71000,
+                            0,
+                            "linear",
+                            "${page4-chart-block2}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid283",
+                            "display",
+                            67500,
+                            0,
+                            "linear",
+                            "${sym-page4-button}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid308",
+                            "display",
+                            72000,
+                            0,
+                            "linear",
+                            "${sym-page4-button}",
+                            'none',
+                            'block'
+                        ],
+                            [ "eid310", "trigger", 71000, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${page4}', [] ] ]
+                    ]
+                }
+            },
+            "sym-page4-button": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '89px', '29px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect',
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(16,2,247,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text6',
+                            text: '研究设计',
+                            align: 'left',
+                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '89px', '29px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-page4-popup": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '20px', '563px', '215px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            fill: ['rgba(255,255,255,1.00)'],
+                            id: 'RoundRect2',
+                            stroke: [1, 'rgba(0,0,255,1.00)', 'solid'],
+                            type: 'rect',
+                            boxShadow: ['', 3, 3, 3, 0, 'rgba(0,0,0,0.65098)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
+                            type: 'text',
+                            id: 'Text7',
+                            text: 'MOSAIC研究是一项多中心、随机、双盲、双模拟、平行分组的非劣效研究，旨在比较口服孟鲁司特5mg qd与吸入氟替卡松100μg bid对哮喘无急救天数的改善。研究共纳入994例6-14岁的轻度持续性哮喘患儿，4周单盲、安慰剂导入期后，患者随机接受口服孟鲁司特5mg qd（若患者年龄满15岁，给予10mg qd, n=495）或吸入氟替卡松100μg bid（n=449）治疗12个月。主要研究终点为1年中哮喘无急救天数比例。若95%CI的下线在-7%以上，则认为孟鲁司特非劣效于氟替卡松。',
+                            align: 'left',
+                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-page2-popup-close',
+                            symbolName: 'sym-page2-popup-close',
+                            cursor: 'pointer',
+                            rect: ['536', '0', '38', '38', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '574px', '187px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-page5": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
+                            id: 'page3-bg3',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/page3-bg.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['161px', '122px', '105px', '290px', 'auto', 'auto'],
+                            id: 'left-kid2',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/left-kid.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['783px', '65px', '137px', '375px', 'auto', 'auto'],
+                            id: 'right-kid3',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/right-kid.png', '0px', '0px']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [12, 'px'], 'rgba(0,0,0,1)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text16',
+                            text: '5. Szefler SJ, et al. J Allergy Clin Immunol 2007;120(5):1043-1050.',
+                            align: 'left',
+                            rect: ['200px', '555px', 'auto', 'auto', 'auto', 'auto']
+                        },
+                        {
+                            rect: ['200px', '119px', '624px', '409px', 'auto', 'auto'],
+                            id: 'page5-chart',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/page5-chart.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['293px', '228px', '485px', '201px', 'auto', 'auto'],
+                            id: 'page5-line',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/page5-line.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['298px', '228', '485px', '201px', 'auto', 'auto'],
+                            id: 'page5-desc',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/page5-desc.png', '0px', '0px']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '1024px', '768px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-page5-button": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '89px', '29px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect',
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(16,2,247,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text6',
+                            text: '研究设计',
+                            align: 'left',
+                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '89px', '29px']
                         }
                     }
                 },
