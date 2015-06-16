@@ -95,6 +95,7 @@
                             type: 'audio',
                             tag: 'audio',
                             rect: ['164', '166', '320px', '45px', 'auto', 'auto'],
+                            loop: 'loop',
                             source: [aud+"background.mp3"],
                             preload: 'auto'
                         },
@@ -528,8 +529,8 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
                             id: 'page1-bg',
+                            type: 'image',
                             rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page1-bg.png', '0px', '0px']
                         },
@@ -557,14 +558,14 @@
                             fill: ['rgba(0,0,0,0)', 'images/kid-smile-1.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
                             id: 'cherry-ltra2',
+                            type: 'image',
                             rect: ['364px', '566px', '67px', '61px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cherry-ltra2.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
                             id: 'cherry2',
+                            type: 'image',
                             rect: ['622px', '442px', '63px', '62px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cherry.png', '0px', '0px']
                         },
@@ -612,7 +613,8 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1024px', '768px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1024px', '768px']
                         }
                     }
                 },
@@ -964,16 +966,16 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
                             id: 'page1-bg2',
+                            type: 'image',
                             rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page1-bg.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0', '0']],
-                            id: 'page2_chart',
-                            type: 'image',
                             rect: ['185px', '86px', '655px', '597px', 'auto', 'auto'],
+                            id: 'page2_chart',
+                            transform: [[], [], [], ['0', '0']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/page2_chart.png', '0px', '0px']
                         },
                         {
@@ -1003,7 +1005,8 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1024px', '768px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1024px', '768px']
                         }
                     }
                 },
@@ -1203,8 +1206,8 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
                             id: 'page3-bg',
+                            type: 'image',
                             rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page3-bg.png', '0px', '0px']
                         },
@@ -1217,20 +1220,20 @@
                             fill: ['rgba(10,26,252,1.00)']
                         },
                         {
-                            type: 'text',
                             rect: ['432px', '97px', 'auto', 'auto', 'auto', 'auto'],
+                            font: ['Arial, Helvetica, sans-serif', [40, 'px'], 'rgba(255,255,255,1)', '700', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap'],
                             id: 'Text9',
                             text: '调研问卷',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [40, 'px'], 'rgba(255,255,255,1)', '700', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap']
+                            type: 'text'
                         },
                         {
-                            type: 'text',
                             rect: ['96px', '220px', 'auto', 'auto', 'auto', 'auto'],
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1.00)', '500', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap'],
                             id: 'Text10',
                             text: '您认可孟鲁司特纳在轻度持续性哮喘治疗中与ICS疗效相当吗？',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1.00)', '500', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap']
+                            type: 'text'
                         },
                         {
                             type: 'rect',
@@ -1303,20 +1306,20 @@
                             rect: ['698px', '336px', null, null, 'auto', 'auto']
                         },
                         {
-                            type: 'text',
                             rect: ['85px', '343px', 'auto', 'auto', 'auto', 'auto'],
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             id: 'Text12',
                             text: '不是',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            type: 'text'
                         },
                         {
-                            type: 'text',
                             rect: ['870', '343px', 'auto', 'auto', 'auto', 'auto'],
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             id: 'Text13',
                             text: '是',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            type: 'text'
                         },
                         {
                             type: 'rect',
@@ -1337,7 +1340,8 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1024px', '768px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1024px', '768px']
                         }
                     }
                 },
@@ -2405,7 +2409,7 @@
                             font: ['Arial, Helvetica, sans-serif', [12, 'px'], 'rgba(0,0,0,1)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', ''],
                             rect: ['200px', '547px', '521px', '44px', 'auto', 'auto'],
                             align: 'left',
-                            text: '4. Garcia ML, et al. Montelukast, Compared with Fluticasone, for the Treatment of Persistent Asthma among 6-to 14-Year-Old Patients with Mild Asthma: The MOSAIC Study. Pediatrics. 2005;116:360-369.',
+                            text: '5. Szefler SJ, et al. J Allergy Clin Immunol 2007;120(5):1043-1050.',
                             id: 'Text16',
                             opacity: '0',
                             display: 'block',

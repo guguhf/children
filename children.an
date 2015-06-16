@@ -415,7 +415,7 @@
 			"timelineColor3":"0x70657c",
 			"animationEnabled":"true",
 			"timelineColor":"0xceaef4"}},
-	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
 	"mediagroup_media/page4.mp3":"page4",
 	"expanded:images/right-kid.png":"nil",
 	"symbol_sym-page4-popup":{
@@ -651,7 +651,7 @@
 			"timelineColor":"0x00a9fa"}},
 	"sym-page4-Default Timeline_mark_ms":"-1",
 	"mediagroup_media/page3.mp3":"page3",
-	"StageZoomFactor":"41",
+	"StageZoomFactor":"74",
 	"pixelsPerMs":"0.048562656808821",
 	"expanded:images/cherry-ltra.png":"nil",
 	"symbol_sym-page2-popup":{
