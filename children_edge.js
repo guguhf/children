@@ -79,7 +79,7 @@
                             display: 'none',
                             type: 'rect',
                             rect: ['0', '0', '1024', '768', 'auto', 'auto'],
-                            opacity: '0'
+                            opacity: '1'
                         },
                         {
                             id: 'background',
@@ -184,16 +184,6 @@
                             "${sym-page5}",
                             'none',
                             'none'
-                        ],
-                        [
-                            "eid315",
-                            "display",
-                            99000,
-                            0,
-                            "linear",
-                            "${sym-page5}",
-                            'none',
-                            'block'
                         ],
                         [
                             "eid55",
@@ -346,26 +336,6 @@
                             'block'
                         ],
                         [
-                            "eid316",
-                            "opacity",
-                            99000,
-                            500,
-                            "linear",
-                            "${sym-page5}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid53",
-                            "top",
-                            2000,
-                            1000,
-                            "linear",
-                            "${sym-logo}",
-                            '245px',
-                            '-97px'
-                        ],
-                        [
                             "eid170",
                             "display",
                             0,
@@ -385,7 +355,18 @@
                             'none',
                             'block'
                         ],
+                        [
+                            "eid53",
+                            "top",
+                            2000,
+                            1000,
+                            "linear",
+                            "${sym-logo}",
+                            '245px',
+                            '-97px'
+                        ],
                             [ "eid278", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${sym-page4}', [] ] ],
+                            [ "eid342", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${sym-page5}', [] ] ],
                             [ "eid62", "trigger", 3250, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${background}', [] ] ]
                     ]
                 }
@@ -400,36 +381,36 @@
                 content: {
                     dom: [
                         {
-                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['0px', '216px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text5',
                             text: '（孟鲁司特纳 . 默沙东）',
                             align: 'left',
-                            rect: ['0px', '216px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['22px', '0px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text',
                             text: '每日一次',
                             align: 'left',
-                            rect: ['22px', '0px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [120, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['22px', '71px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text2',
                             text: '顺尔宁',
                             align: 'left',
-                            rect: ['22px', '71px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [120, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['400px', '81px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text4',
                             text: '®',
                             align: 'left',
-                            rect: ['400px', '81px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -456,9 +437,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
-                            id: 'welcom-bg',
                             type: 'image',
+                            id: 'welcom-bg',
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/welcom-bg.png', '0px', '0px']
                         },
                         {
@@ -471,16 +452,16 @@
                             tag: 'audio'
                         },
                         {
-                            type: 'image',
-                            id: 'txt-welcome',
                             rect: ['229px', '52px', '435px', '125px', 'auto', 'auto'],
+                            id: 'txt-welcome',
+                            type: 'image',
                             clip: 'rect(0px 0px 125px 0px)',
                             fill: ['rgba(0,0,0,0)', 'images/txt-welcome.png', '0px', '0px']
                         },
                         {
-                            rect: ['798px', '81px', '97px', '196px', 'auto', 'auto'],
-                            id: 'blank-balloon',
                             type: 'image',
+                            id: 'blank-balloon',
+                            rect: ['798px', '81px', '97px', '196px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/blank-balloon.png', '0px', '0px']
                         }
                     ],
@@ -529,76 +510,76 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
-                            id: 'page1-bg',
                             type: 'image',
+                            id: 'page1-bg',
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page1-bg.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
                             rect: ['387px', '557', '115px', '152px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'kid-cry',
                             opacity: '1',
                             display: 'block',
                             fill: ['rgba(0,0,0,0)', 'images/kid-cry.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
                             rect: ['387', '557', '116px', '153px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'kid-smile-2',
                             opacity: '0',
                             display: 'block',
                             fill: ['rgba(0,0,0,0)', 'images/kid-smile-2.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            display: 'block',
                             rect: ['386px', '557px', '115px', '152px', 'auto', 'auto'],
                             id: 'kid-smile-1',
+                            type: 'image',
+                            display: 'block',
                             fill: ['rgba(0,0,0,0)', 'images/kid-smile-1.png', '0px', '0px']
                         },
                         {
-                            rect: ['364px', '566px', '67px', '61px', 'auto', 'auto'],
-                            id: 'cherry-ltra2',
                             type: 'image',
+                            id: 'cherry-ltra2',
+                            rect: ['364px', '566px', '67px', '61px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cherry-ltra2.png', '0px', '0px']
                         },
                         {
-                            rect: ['622px', '442px', '63px', '62px', 'auto', 'auto'],
-                            id: 'cherry2',
                             type: 'image',
+                            id: 'cherry2',
+                            rect: ['622px', '442px', '63px', '62px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/cherry.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0', '0']],
                             type: 'image',
-                            id: 'page1-chart',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'block',
                             rect: ['175px', '86px', '655px', '597px', 'auto', 'auto'],
+                            id: 'page1-chart',
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0', '0']],
                             type: 'image',
-                            id: 'page1-chart-block3',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'block',
                             rect: ['398px', '566px', '91px', '50px', 'auto', 'auto'],
+                            id: 'page1-chart-block3',
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart-block3.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0', '0']],
                             type: 'image',
-                            id: 'page1-chart-block2',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'block',
                             rect: ['410px', '588px', '92px', '39px', 'auto', 'auto'],
+                            id: 'page1-chart-block2',
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart-block2.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0', '0']],
                             type: 'image',
-                            id: 'page1-chart-block1',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'block',
                             rect: ['410px', '583px', '92px', '28px', 'auto', 'auto'],
+                            id: 'page1-chart-block1',
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart-block1.png', '0px', '0px']
                         },
                         {
@@ -632,24 +613,14 @@
                             '539px'
                         ],
                         [
-                            "eid99",
-                            "display",
-                            8250,
-                            0,
+                            "eid93",
+                            "opacity",
+                            11000,
+                            250,
                             "linear",
-                            "${page1-chart-block2}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid117",
-                            "display",
-                            14000,
-                            0,
-                            "linear",
-                            "${page1-chart-block2}",
-                            'none',
-                            'block'
+                            "${kid-cry}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid149",
@@ -692,14 +663,24 @@
                             '1'
                         ],
                         [
-                            "eid150",
-                            "scaleY",
-                            16000,
-                            500,
+                            "eid98",
+                            "display",
+                            8250,
+                            0,
                             "linear",
-                            "${page1-chart}",
-                            '0',
-                            '1'
+                            "${page1-chart-block1}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid101",
+                            "display",
+                            13000,
+                            0,
+                            "linear",
+                            "${page1-chart-block1}",
+                            'none',
+                            'block'
                         ],
                         [
                             "eid114",
@@ -742,34 +723,24 @@
                             'block'
                         ],
                         [
-                            "eid98",
-                            "display",
-                            8250,
-                            0,
+                            "eid150",
+                            "scaleY",
+                            16000,
+                            500,
                             "linear",
-                            "${page1-chart-block1}",
-                            'block',
-                            'none'
+                            "${page1-chart}",
+                            '0',
+                            '1'
                         ],
                         [
-                            "eid101",
-                            "display",
+                            "eid116",
+                            "scaleY",
                             13000,
-                            0,
+                            500,
                             "linear",
                             "${page1-chart-block1}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid93",
-                            "opacity",
-                            11000,
-                            250,
-                            "linear",
-                            "${kid-cry}",
-                            '1',
-                            '0'
+                            '0',
+                            '1'
                         ],
                         [
                             "eid79",
@@ -792,34 +763,54 @@
                             '566px'
                         ],
                         [
-                            "eid115",
+                            "eid142",
                             "scaleX",
-                            13000,
+                            15000,
                             500,
                             "linear",
-                            "${page1-chart-block1}",
+                            "${page1-chart-block3}",
                             '0',
                             '1'
                         ],
                         [
-                            "eid96",
-                            "opacity",
-                            11000,
-                            250,
+                            "eid130",
+                            "scaleY",
+                            14000,
+                            500,
                             "linear",
-                            "${kid-smile-2}",
+                            "${page1-chart-block2}",
                             '0',
                             '1'
                         ],
                         [
-                            "eid82",
+                            "eid80",
                             "display",
-                            10587,
+                            8250,
                             0,
                             "linear",
-                            "${kid-smile-1}",
+                            "${kid-smile-2}",
                             'block',
                             'none'
+                        ],
+                        [
+                            "eid94",
+                            "display",
+                            11000,
+                            0,
+                            "linear",
+                            "${kid-smile-2}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid86",
+                            "display",
+                            11250,
+                            0,
+                            "linear",
+                            "${kid-smile-2}",
+                            'block',
+                            'block'
                         ],
                         [
                             "eid113",
@@ -882,62 +873,52 @@
                             '310px'
                         ],
                         [
-                            "eid80",
+                            "eid99",
                             "display",
                             8250,
                             0,
                             "linear",
-                            "${kid-smile-2}",
+                            "${page1-chart-block2}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid94",
+                            "eid117",
                             "display",
-                            11000,
+                            14000,
                             0,
                             "linear",
-                            "${kid-smile-2}",
+                            "${page1-chart-block2}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid86",
+                            "eid82",
                             "display",
-                            11250,
+                            10587,
                             0,
                             "linear",
-                            "${kid-smile-2}",
+                            "${kid-smile-1}",
                             'block',
-                            'block'
+                            'none'
                         ],
                         [
-                            "eid130",
-                            "scaleY",
-                            14000,
-                            500,
-                            "linear",
-                            "${page1-chart-block2}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid142",
+                            "eid115",
                             "scaleX",
-                            15000,
-                            500,
-                            "linear",
-                            "${page1-chart-block3}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid116",
-                            "scaleY",
                             13000,
                             500,
                             "linear",
                             "${page1-chart-block1}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid96",
+                            "opacity",
+                            11000,
+                            250,
+                            "linear",
+                            "${kid-smile-2}",
                             '0',
                             '1'
                         ],
@@ -965,16 +946,16 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
-                            id: 'page1-bg2',
                             type: 'image',
+                            id: 'page1-bg2',
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page1-bg.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0', '0']],
-                            id: 'page2_chart',
                             type: 'image',
+                            id: 'page2_chart',
                             rect: ['185px', '86px', '655px', '597px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
                             fill: ['rgba(0,0,0,0)', 'images/page2_chart.png', '0px', '0px']
                         },
                         {
@@ -988,18 +969,18 @@
                         },
                         {
                             rect: ['698', '587', '89', '29', 'auto', 'auto'],
-                            id: 'sym-page2-button',
+                            type: 'rect',
                             display: 'block',
                             symbolName: 'sym-page2-button',
                             cursor: 'pointer',
-                            type: 'rect'
+                            id: 'sym-page2-button'
                         },
                         {
                             rect: ['231', '268', '574', '187', 'auto', 'auto'],
-                            display: 'block',
-                            symbolName: 'sym-page2-popup',
                             id: 'sym-page2-popup',
-                            type: 'rect'
+                            symbolName: 'sym-page2-popup',
+                            type: 'rect',
+                            display: 'block'
                         }
                     ],
                     style: {
@@ -1013,14 +994,24 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid162",
-                            "scaleX",
-                            39000,
-                            500,
+                            "eid166",
+                            "display",
+                            0,
+                            0,
                             "linear",
-                            "${page2_chart}",
-                            '0',
-                            '1'
+                            "${sym-page2-button}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid167",
+                            "display",
+                            39500,
+                            0,
+                            "linear",
+                            "${sym-page2-button}",
+                            'none',
+                            'block'
                         ],
                         [
                             "eid163",
@@ -1043,24 +1034,14 @@
                             'none'
                         ],
                         [
-                            "eid166",
-                            "display",
-                            0,
-                            0,
+                            "eid162",
+                            "scaleX",
+                            39000,
+                            500,
                             "linear",
-                            "${sym-page2-button}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid167",
-                            "display",
-                            39500,
-                            0,
-                            "linear",
-                            "${sym-page2-button}",
-                            'none',
-                            'block'
+                            "${page2_chart}",
+                            '0',
+                            '1'
                         ],
                             [ "eid164", "trigger", 39500, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${page2}', [] ] ]
                     ]
@@ -1084,12 +1065,12 @@
                             fill: ['rgba(16,2,247,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text6',
                             text: '研究设计',
                             align: 'left',
-                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1118,19 +1099,19 @@
                         {
                             rect: ['0px', '20px', '563px', '150px', 'auto', 'auto'],
                             borderRadius: ['10px', '10px', '10px', '10px'],
-                            fill: ['rgba(255,255,255,1.00)'],
+                            boxShadow: ['', 3, 3, 3, 0, 'rgba(0,0,0,0.65098)'],
                             id: 'RoundRect2',
                             stroke: [1, 'rgba(0,0,255,1.00)', 'solid'],
                             type: 'rect',
-                            boxShadow: ['', 3, 3, 3, 0, 'rgba(0,0,0,0.65098)']
+                            fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
                             type: 'text',
+                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto'],
                             id: 'Text7',
                             text: '一项多国、随机、双盲、安慰剂对照的平行分组研究，共纳入689名2-5岁持续性哮喘患儿。2周单盲、安慰剂导入期后，或者随机接受孟鲁司特4mg/日（n=461）或安慰剂（n=228）治疗12周。主要研究终点包括：日、夜间哮喘症状、β激动剂使用、无哮喘天、哮喘发作频率等。',
                             align: 'left',
-                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', '']
                         },
                         {
                             type: 'rect',
@@ -1172,12 +1153,12 @@
                             fill: ['rgba(255,173,0,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [20, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text8',
                             text: 'X',
                             align: 'left',
-                            rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [20, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1204,9 +1185,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             id: 'page3-bg',
                             type: 'image',
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page3-bg.png', '0px', '0px']
                         },
                         {
@@ -1218,20 +1199,20 @@
                             fill: ['rgba(10,26,252,1.00)']
                         },
                         {
+                            rect: ['432px', '97px', 'auto', 'auto', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [40, 'px'], 'rgba(255,255,255,1)', '700', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap'],
-                            type: 'text',
                             id: 'Text9',
                             text: '调研问卷',
                             align: 'left',
-                            rect: ['432px', '97px', 'auto', 'auto', 'auto', 'auto']
+                            type: 'text'
                         },
                         {
+                            rect: ['96px', '220px', 'auto', 'auto', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1.00)', '500', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap'],
-                            type: 'text',
                             id: 'Text10',
                             text: '您认可孟鲁司特纳在轻度持续性哮喘治疗中与ICS疗效相当吗？',
                             align: 'left',
-                            rect: ['96px', '220px', 'auto', 'auto', 'auto', 'auto']
+                            type: 'text'
                         },
                         {
                             type: 'rect',
@@ -1304,20 +1285,20 @@
                             rect: ['698px', '336px', null, null, 'auto', 'auto']
                         },
                         {
+                            rect: ['85px', '343px', 'auto', 'auto', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
-                            type: 'text',
                             id: 'Text12',
                             text: '不是',
                             align: 'left',
-                            rect: ['85px', '343px', 'auto', 'auto', 'auto', 'auto']
+                            type: 'text'
                         },
                         {
+                            rect: ['870', '343px', 'auto', 'auto', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
-                            type: 'text',
                             id: 'Text13',
                             text: '是',
                             align: 'left',
-                            rect: ['870', '343px', 'auto', 'auto', 'auto', 'auto']
+                            type: 'text'
                         },
                         {
                             type: 'rect',
@@ -1338,7 +1319,8 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1024px', '768px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1024px', '768px']
                         }
                     }
                 },
@@ -1347,14 +1329,14 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid260",
-                            "left",
+                            "eid269",
+                            "top",
                             60000,
                             0,
                             "linear",
-                            "${sym-9}",
-                            '698px',
-                            '698px'
+                            "${sym-7}",
+                            '336px',
+                            '336px'
                         ],
                         [
                             "eid274",
@@ -1487,34 +1469,14 @@
                             '336px'
                         ],
                         [
-                            "eid272",
+                            "eid266",
                             "left",
                             60000,
                             0,
                             "linear",
-                            "${sym-8}",
-                            '638px',
-                            '638px'
-                        ],
-                        [
-                            "eid269",
-                            "top",
-                            60000,
-                            0,
-                            "linear",
-                            "${sym-7}",
-                            '336px',
-                            '336px'
-                        ],
-                        [
-                            "eid261",
-                            "top",
-                            60000,
-                            0,
-                            "linear",
-                            "${sym-9}",
-                            '336px',
-                            '336px'
+                            "${sym-2}",
+                            '278px',
+                            '278px'
                         ],
                         [
                             "eid268",
@@ -1527,14 +1489,34 @@
                             '578px'
                         ],
                         [
-                            "eid266",
+                            "eid261",
+                            "top",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-9}",
+                            '336px',
+                            '336px'
+                        ],
+                        [
+                            "eid260",
                             "left",
                             60000,
                             0,
                             "linear",
-                            "${sym-2}",
-                            '278px',
-                            '278px'
+                            "${sym-9}",
+                            '698px',
+                            '698px'
+                        ],
+                        [
+                            "eid272",
+                            "left",
+                            60000,
+                            0,
+                            "linear",
+                            "${sym-8}",
+                            '638px',
+                            '638px'
                         ],
                         [
                             "eid259",
@@ -1568,12 +1550,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '1',
                             align: 'left',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1608,12 +1590,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '2',
                             align: 'left',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1648,12 +1630,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '3',
                             align: 'left',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1688,12 +1670,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '4',
                             align: 'left',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1728,12 +1710,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '5',
                             align: 'left',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1768,12 +1750,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '6',
                             align: 'left',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1808,12 +1790,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '7',
                             align: 'left',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1848,12 +1830,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '8',
                             align: 'left',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1888,12 +1870,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '9',
                             align: 'left',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1928,12 +1910,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['7px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '10',
                             align: 'left',
-                            rect: ['7px', '7px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -1968,12 +1950,12 @@
                             fill: ['rgba(0,34,242,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(255,255,255,1.00)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['46px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text14',
                             text: '提   交',
                             align: 'left',
-                            rect: ['46px', '7px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(255,255,255,1.00)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -2085,7 +2067,7 @@
                     }
                 },
                 timeline: {
-                    duration: 96789.75,
+                    duration: 98000,
                     autoPlay: false,
                     labels: {
                         "play-point": 67500
@@ -2305,12 +2287,12 @@
                             fill: ['rgba(16,2,247,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text6',
                             text: '研究设计',
                             align: 'left',
-                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -2339,19 +2321,19 @@
                         {
                             rect: ['0px', '20px', '563px', '215px', 'auto', 'auto'],
                             borderRadius: ['10px', '10px', '10px', '10px'],
-                            fill: ['rgba(255,255,255,1.00)'],
+                            boxShadow: ['', 3, 3, 3, 0, 'rgba(0,0,0,0.65098)'],
                             id: 'RoundRect2',
                             stroke: [1, 'rgba(0,0,255,1.00)', 'solid'],
                             type: 'rect',
-                            boxShadow: ['', 3, 3, 3, 0, 'rgba(0,0,0,0.65098)']
+                            fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
                             type: 'text',
+                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto'],
                             id: 'Text7',
                             text: 'MOSAIC研究是一项多中心、随机、双盲、双模拟、平行分组的非劣效研究，旨在比较口服孟鲁司特5mg qd与吸入氟替卡松100μg bid对哮喘无急救天数的改善。研究共纳入994例6-14岁的轻度持续性哮喘患儿，4周单盲、安慰剂导入期后，患者随机接受口服孟鲁司特5mg qd（若患者年龄满15岁，给予10mg qd, n=495）或吸入氟替卡松100μg bid（n=449）治疗12个月。主要研究终点为1年中哮喘无急救天数比例。若95%CI的下线在-7%以上，则认为孟鲁司特非劣效于氟替卡松。',
                             align: 'left',
-                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', '']
                         },
                         {
                             type: 'rect',
@@ -2403,10 +2385,10 @@
                             fill: ['rgba(0,0,0,0)', 'images/right-kid.png', '0px', '0px']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [12, 'px'], 'rgba(0,0,0,1)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
-                            rect: ['200px', '555px', 'auto', 'auto', 'auto', 'auto'],
+                            font: ['Arial, Helvetica, sans-serif', [12, 'px'], 'rgba(0,0,0,1)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', ''],
+                            rect: ['200px', '547px', '521px', '44px', 'auto', 'auto'],
                             align: 'left',
-                            text: '5. Szefler SJ, et al. J Allergy Clin Immunol 2007;120(5):1043-1050.',
+                            text: '4. Garcia ML, et al. Montelukast, Compared with Fluticasone, for the Treatment of Persistent Asthma among 6-to 14-Year-Old Patients with Mild Asthma: The MOSAIC Study. Pediatrics. 2005;116:360-369.',
                             id: 'Text16',
                             opacity: '0',
                             display: 'block',
@@ -2439,7 +2421,7 @@
                         {
                             type: 'rect',
                             opacity: '0',
-                            rect: ['733px', '547px', undefined, undefined, 'auto', 'auto'],
+                            rect: ['733px', '547px', null, null, 'auto', 'auto'],
                             display: 'block',
                             symbolName: 'sym-page5-button',
                             cursor: 'pointer',
@@ -2449,7 +2431,7 @@
                             type: 'rect',
                             display: 'none',
                             symbolName: 'sym-page5-popup',
-                            rect: ['225px', '197px', undefined, undefined, 'auto', 'auto'],
+                            rect: ['225px', '197px', null, null, 'auto', 'auto'],
                             id: 'sym-page5-popup'
                         },
                         {
@@ -2472,6 +2454,9 @@
                 timeline: {
                     duration: 131092.5,
                     autoPlay: true,
+                    labels: {
+                        "page5-playpoint": 98000
+                    },
                     data: [
                         [
                             "eid322",
@@ -2504,22 +2489,22 @@
                             '1'
                         ],
                         [
-                            "eid319",
+                            "eid320",
                             "display",
                             99500,
                             0,
                             "linear",
-                            "${page5-desc}",
+                            "${page5-line}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid332",
+                            "eid329",
                             "display",
-                            101000,
+                            100000,
                             0,
                             "linear",
-                            "${page5-desc}",
+                            "${page5-line}",
                             'none',
                             'block'
                         ],
@@ -2544,44 +2529,14 @@
                             'none'
                         ],
                         [
-                            "eid320",
+                            "eid321",
                             "display",
                             99500,
                             0,
                             "linear",
-                            "${page5-line}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid329",
-                            "display",
-                            100000,
-                            0,
-                            "linear",
-                            "${page5-line}",
+                            "${page5-chart}",
                             'none',
                             'block'
-                        ],
-                        [
-                            "eid334",
-                            "opacity",
-                            101000,
-                            500,
-                            "linear",
-                            "${page5-desc}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid337",
-                            "opacity",
-                            101500,
-                            500,
-                            "linear",
-                            "${Text16}",
-                            '0',
-                            '1'
                         ],
                         [
                             "eid328",
@@ -2594,12 +2549,12 @@
                             '1'
                         ],
                         [
-                            "eid327",
-                            "scaleX",
-                            99500,
+                            "eid337",
+                            "opacity",
+                            101500,
                             500,
                             "linear",
-                            "${page5-chart}",
+                            "${Text16}",
                             '0',
                             '1'
                         ],
@@ -2624,6 +2579,36 @@
                             'block'
                         ],
                         [
+                            "eid319",
+                            "display",
+                            99500,
+                            0,
+                            "linear",
+                            "${page5-desc}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid332",
+                            "display",
+                            101000,
+                            0,
+                            "linear",
+                            "${page5-desc}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid334",
+                            "opacity",
+                            101000,
+                            500,
+                            "linear",
+                            "${page5-desc}",
+                            '0',
+                            '1'
+                        ],
+                        [
                             "eid331",
                             "clip",
                             100000,
@@ -2635,14 +2620,14 @@
                             {valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'}
                         ],
                         [
-                            "eid321",
-                            "display",
+                            "eid327",
+                            "scaleX",
                             99500,
-                            0,
+                            500,
                             "linear",
                             "${page5-chart}",
-                            'none',
-                            'block'
+                            '0',
+                            '1'
                         ],
                             [ "eid341", "trigger", 100000, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${page5}', [] ] ]
                     ]
@@ -2666,12 +2651,12 @@
                             fill: ['rgba(16,2,247,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
+                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text6',
                             text: '研究设计',
                             align: 'left',
-                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -2700,19 +2685,19 @@
                         {
                             rect: ['0px', '20px', '563px', '285px', 'auto', 'auto'],
                             borderRadius: ['10px', '10px', '10px', '10px'],
-                            boxShadow: ['', 3, 3, 3, 0, 'rgba(0,0,0,0.65098)'],
+                            fill: ['rgba(255,255,255,1.00)'],
                             id: 'RoundRect2',
                             stroke: [1, 'rgba(0,0,255,1.00)', 'solid'],
                             type: 'rect',
-                            fill: ['rgba(255,255,255,1.00)']
+                            boxShadow: ['', 3, 3, 3, 0, 'rgba(0,0,0,0.65098)']
                         },
                         {
-                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
+                            type: 'text',
                             id: 'Text7',
                             text: '一项为期52周的多中心、随机、对照的开放性研究，共纳入395例2-8岁的轻度持续性哮喘或反复性哮喘患儿，随机吸入布地奈德0.5mg qd（n=197）或口服孟鲁司特4mg或5mg qd（n=198）治疗52周。轻度哮喘急性发作时，患者每日加用1次布地奈德0.5mg雾化吸入治疗，持续14天，重度发作时，患者接受口服激素治疗，持续3-10天。主要疗效终点为52周内因哮喘急性发作而第一次加用其他哮喘药物的时间。次要终点包括12周和26周时第一次加用其他药物的时间，12周、26周和52周时第一次哮喘发作（轻度和重度）的时间，52周内哮喘发作，日记参数（如呼气峰流速PEF），或者报告的结果和医生、护士的评估。',
                             align: 'left',
-                            type: 'text'
+                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
@@ -2724,8 +2709,7 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '574px', '187px']
+                            rect: [null, null, '574px', '187px']
                         }
                     }
                 },

@@ -350,6 +350,24 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 98000, function(sym, e) {
+         // insert code here
+         // Play the timeline at a label or specific time. For example:
+         // sym.play(500); or sym.play("myLabel");
+         
+         // Show an element 
+         
+         // Hide an element 
+         sym.stop();
+         sym.$("page4")[0].pause();
+         sym.getSymbolElement().hide();
+         
+         sym.getComposition().getStage().$("sym-page5").show();
+         sym.getComposition().getStage().getSymbol("sym-page5").play("page5-playpoint");
+
+      });
+      //Edge binding end
+
    })("sym-page4");
    //Edge symbol end:'sym-page4'
 
