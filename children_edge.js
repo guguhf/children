@@ -82,6 +82,13 @@
                             opacity: '1'
                         },
                         {
+                            id: 'sym-page6',
+                            symbolName: 'sym-page6',
+                            display: 'none',
+                            type: 'rect',
+                            rect: ['0', '0', '1024', '768', 'auto', 'auto']
+                        },
+                        {
                             id: 'background',
                             display: 'none',
                             volume: '0.3',
@@ -112,7 +119,7 @@
                     }
                 },
                 timeline: {
-                    duration: 230740.491,
+                    duration: 67164.25,
                     autoPlay: true,
                     data: [
                         [
@@ -174,6 +181,16 @@
                             "${sym-logo}",
                             '280px',
                             '-198px'
+                        ],
+                        [
+                            "eid345",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${sym-page6}",
+                            'none',
+                            'none'
                         ],
                         [
                             "eid314",
@@ -336,6 +353,16 @@
                             'block'
                         ],
                         [
+                            "eid53",
+                            "top",
+                            2000,
+                            1000,
+                            "linear",
+                            "${sym-logo}",
+                            '245px',
+                            '-97px'
+                        ],
+                        [
                             "eid170",
                             "display",
                             0,
@@ -355,17 +382,8 @@
                             'none',
                             'block'
                         ],
-                        [
-                            "eid53",
-                            "top",
-                            2000,
-                            1000,
-                            "linear",
-                            "${sym-logo}",
-                            '245px',
-                            '-97px'
-                        ],
                             [ "eid278", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${sym-page4}', [] ] ],
+                            [ "eid346", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${sym-page6}', [] ] ],
                             [ "eid342", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${sym-page5}', [] ] ],
                             [ "eid62", "trigger", 3250, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${background}', [] ] ]
                     ]
@@ -381,36 +399,36 @@
                 content: {
                     dom: [
                         {
+                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['0px', '216px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text5',
                             text: '（孟鲁司特纳 . 默沙东）',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
+                            rect: ['0px', '216px', 'auto', 'auto', 'auto', 'auto']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['22px', '0px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text',
                             text: '每日一次',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
+                            rect: ['22px', '0px', 'auto', 'auto', 'auto', 'auto']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [120, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['22px', '71px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text2',
                             text: '顺尔宁',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [120, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
+                            rect: ['22px', '71px', 'auto', 'auto', 'auto', 'auto']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['400px', '81px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text4',
                             text: '®',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [50, 'px'], 'rgba(2,152,202,1)', '900', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
+                            rect: ['400px', '81px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -551,35 +569,35 @@
                             fill: ['rgba(0,0,0,0)', 'images/cherry.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            transform: [[], [], [], ['0', '0']],
-                            display: 'block',
                             rect: ['175px', '86px', '655px', '597px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
                             id: 'page1-chart',
+                            type: 'image',
+                            display: 'block',
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            transform: [[], [], [], ['0', '0']],
-                            display: 'block',
                             rect: ['398px', '566px', '91px', '50px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
                             id: 'page1-chart-block3',
+                            type: 'image',
+                            display: 'block',
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart-block3.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            transform: [[], [], [], ['0', '0']],
-                            display: 'block',
                             rect: ['410px', '588px', '92px', '39px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
                             id: 'page1-chart-block2',
+                            type: 'image',
+                            display: 'block',
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart-block2.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            transform: [[], [], [], ['0', '0']],
-                            display: 'block',
                             rect: ['410px', '583px', '92px', '28px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
                             id: 'page1-chart-block1',
+                            type: 'image',
+                            display: 'block',
                             fill: ['rgba(0,0,0,0)', 'images/page1-chart-block1.png', '0px', '0px']
                         },
                         {
@@ -603,24 +621,44 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid140",
-                            "left",
-                            15000,
-                            500,
+                            "eid80",
+                            "display",
+                            8250,
+                            0,
                             "linear",
-                            "${page1-chart-block3}",
-                            '398px',
-                            '539px'
+                            "${kid-smile-2}",
+                            'block',
+                            'none'
                         ],
                         [
-                            "eid93",
-                            "opacity",
+                            "eid94",
+                            "display",
                             11000,
-                            250,
+                            0,
                             "linear",
-                            "${kid-cry}",
-                            '1',
-                            '0'
+                            "${kid-smile-2}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid86",
+                            "display",
+                            11250,
+                            0,
+                            "linear",
+                            "${kid-smile-2}",
+                            'block',
+                            'block'
+                        ],
+                        [
+                            "eid82",
+                            "display",
+                            10587,
+                            0,
+                            "linear",
+                            "${kid-smile-1}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid149",
@@ -653,12 +691,12 @@
                             'block'
                         ],
                         [
-                            "eid143",
+                            "eid116",
                             "scaleY",
-                            15000,
+                            13000,
                             500,
                             "linear",
-                            "${page1-chart-block3}",
+                            "${page1-chart-block1}",
                             '0',
                             '1'
                         ],
@@ -733,12 +771,12 @@
                             '1'
                         ],
                         [
-                            "eid116",
+                            "eid143",
                             "scaleY",
-                            13000,
+                            15000,
                             500,
                             "linear",
-                            "${page1-chart-block1}",
+                            "${page1-chart-block3}",
                             '0',
                             '1'
                         ],
@@ -783,34 +821,14 @@
                             '1'
                         ],
                         [
-                            "eid80",
-                            "display",
-                            8250,
-                            0,
+                            "eid140",
+                            "left",
+                            15000,
+                            500,
                             "linear",
-                            "${kid-smile-2}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid94",
-                            "display",
-                            11000,
-                            0,
-                            "linear",
-                            "${kid-smile-2}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid86",
-                            "display",
-                            11250,
-                            0,
-                            "linear",
-                            "${kid-smile-2}",
-                            'block',
-                            'block'
+                            "${page1-chart-block3}",
+                            '398px',
+                            '539px'
                         ],
                         [
                             "eid113",
@@ -873,6 +891,16 @@
                             '310px'
                         ],
                         [
+                            "eid93",
+                            "opacity",
+                            11000,
+                            250,
+                            "linear",
+                            "${kid-cry}",
+                            '1',
+                            '0'
+                        ],
+                        [
                             "eid99",
                             "display",
                             8250,
@@ -891,16 +919,6 @@
                             "${page1-chart-block2}",
                             'none',
                             'block'
-                        ],
-                        [
-                            "eid82",
-                            "display",
-                            10587,
-                            0,
-                            "linear",
-                            "${kid-smile-1}",
-                            'block',
-                            'none'
                         ],
                         [
                             "eid115",
@@ -952,10 +970,10 @@
                             fill: ['rgba(0,0,0,0)', 'images/page1-bg.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            id: 'page2_chart',
-                            rect: ['185px', '86px', '655px', '597px', 'auto', 'auto'],
                             transform: [[], [], [], ['0', '0']],
+                            id: 'page2_chart',
+                            type: 'image',
+                            rect: ['185px', '86px', '655px', '597px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page2_chart.png', '0px', '0px']
                         },
                         {
@@ -968,19 +986,19 @@
                             tag: 'audio'
                         },
                         {
-                            rect: ['698', '587', '89', '29', 'auto', 'auto'],
                             type: 'rect',
+                            rect: ['698', '587', '89', '29', 'auto', 'auto'],
                             display: 'block',
                             symbolName: 'sym-page2-button',
                             cursor: 'pointer',
                             id: 'sym-page2-button'
                         },
                         {
-                            rect: ['231', '268', '574', '187', 'auto', 'auto'],
-                            id: 'sym-page2-popup',
-                            symbolName: 'sym-page2-popup',
                             type: 'rect',
-                            display: 'block'
+                            display: 'block',
+                            symbolName: 'sym-page2-popup',
+                            rect: ['231', '268', '574', '187', 'auto', 'auto'],
+                            id: 'sym-page2-popup'
                         }
                     ],
                     style: {
@@ -1065,12 +1083,12 @@
                             fill: ['rgba(16,2,247,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text6',
                             text: '研究设计',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
+                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1106,12 +1124,12 @@
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
                             type: 'text',
-                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto'],
                             id: 'Text7',
                             text: '一项多国、随机、双盲、安慰剂对照的平行分组研究，共纳入689名2-5岁持续性哮喘患儿。2周单盲、安慰剂导入期后，或者随机接受孟鲁司特4mg/日（n=461）或安慰剂（n=228）治疗12周。主要研究终点包括：日、夜间哮喘症状、β激动剂使用、无哮喘天、哮喘发作频率等。',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', '']
+                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
@@ -1153,12 +1171,12 @@
                             fill: ['rgba(255,173,0,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [20, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text8',
                             text: 'X',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [20, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1185,8 +1203,8 @@
                 content: {
                     dom: [
                         {
-                            id: 'page3-bg',
                             type: 'image',
+                            id: 'page3-bg',
                             rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/page3-bg.png', '0px', '0px']
                         },
@@ -1199,20 +1217,20 @@
                             fill: ['rgba(10,26,252,1.00)']
                         },
                         {
+                            type: 'text',
                             rect: ['432px', '97px', 'auto', 'auto', 'auto', 'auto'],
-                            font: ['Arial, Helvetica, sans-serif', [40, 'px'], 'rgba(255,255,255,1)', '700', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap'],
                             id: 'Text9',
                             text: '调研问卷',
                             align: 'left',
-                            type: 'text'
+                            font: ['Arial, Helvetica, sans-serif', [40, 'px'], 'rgba(255,255,255,1)', '700', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap']
                         },
                         {
+                            type: 'text',
                             rect: ['96px', '220px', 'auto', 'auto', 'auto', 'auto'],
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1.00)', '500', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap'],
                             id: 'Text10',
                             text: '您认可孟鲁司特纳在轻度持续性哮喘治疗中与ICS疗效相当吗？',
                             align: 'left',
-                            type: 'text'
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1.00)', '500', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', 'nowrap']
                         },
                         {
                             type: 'rect',
@@ -1285,20 +1303,20 @@
                             rect: ['698px', '336px', null, null, 'auto', 'auto']
                         },
                         {
+                            type: 'text',
                             rect: ['85px', '343px', 'auto', 'auto', 'auto', 'auto'],
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             id: 'Text12',
                             text: '不是',
                             align: 'left',
-                            type: 'text'
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         },
                         {
+                            type: 'text',
                             rect: ['870', '343px', 'auto', 'auto', 'auto', 'auto'],
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             id: 'Text13',
                             text: '是',
                             align: 'left',
-                            type: 'text'
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
                         },
                         {
                             type: 'rect',
@@ -1319,8 +1337,7 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '1024px', '768px']
+                            rect: [null, null, '1024px', '768px']
                         }
                     }
                 },
@@ -1329,14 +1346,14 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid269",
-                            "top",
+                            "eid260",
+                            "left",
                             60000,
                             0,
                             "linear",
-                            "${sym-7}",
-                            '336px',
-                            '336px'
+                            "${sym-9}",
+                            '698px',
+                            '698px'
                         ],
                         [
                             "eid274",
@@ -1429,14 +1446,14 @@
                             '336px'
                         ],
                         [
-                            "eid264",
+                            "eid268",
                             "left",
                             60000,
                             0,
                             "linear",
-                            "${sym-3}",
-                            '338px',
-                            '338px'
+                            "${sym-7}",
+                            '578px',
+                            '578px'
                         ],
                         [
                             "eid273",
@@ -1479,14 +1496,14 @@
                             '278px'
                         ],
                         [
-                            "eid268",
+                            "eid264",
                             "left",
                             60000,
                             0,
                             "linear",
-                            "${sym-7}",
-                            '578px',
-                            '578px'
+                            "${sym-3}",
+                            '338px',
+                            '338px'
                         ],
                         [
                             "eid261",
@@ -1499,14 +1516,14 @@
                             '336px'
                         ],
                         [
-                            "eid260",
-                            "left",
+                            "eid269",
+                            "top",
                             60000,
                             0,
                             "linear",
-                            "${sym-9}",
-                            '698px',
-                            '698px'
+                            "${sym-7}",
+                            '336px',
+                            '336px'
                         ],
                         [
                             "eid272",
@@ -1550,12 +1567,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '1',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1590,12 +1607,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '2',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1630,12 +1647,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '3',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1670,12 +1687,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '4',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1710,12 +1727,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '5',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1750,12 +1767,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '6',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1790,12 +1807,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '7',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1830,12 +1847,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '8',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1870,12 +1887,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '9',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['15px', '7px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1910,12 +1927,12 @@
                             fill: ['rgba(191,239,251,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['7px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text11',
                             text: '10',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(0,0,0,1)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['7px', '7px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1950,12 +1967,12 @@
                             fill: ['rgba(0,34,242,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(255,255,255,1.00)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['46px', '7px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text14',
                             text: '提   交',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [30, 'px'], 'rgba(255,255,255,1.00)', '500', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap']
+                            rect: ['46px', '7px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -2287,12 +2304,12 @@
                             fill: ['rgba(16,2,247,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text6',
                             text: '研究设计',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
+                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -2328,12 +2345,12 @@
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
                             type: 'text',
-                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto'],
                             id: 'Text7',
                             text: 'MOSAIC研究是一项多中心、随机、双盲、双模拟、平行分组的非劣效研究，旨在比较口服孟鲁司特5mg qd与吸入氟替卡松100μg bid对哮喘无急救天数的改善。研究共纳入994例6-14岁的轻度持续性哮喘患儿，4周单盲、安慰剂导入期后，患者随机接受口服孟鲁司特5mg qd（若患者年龄满15岁，给予10mg qd, n=495）或吸入氟替卡松100μg bid（n=449）治疗12个月。主要研究终点为1年中哮喘无急救天数比例。若95%CI的下线在-7%以上，则认为孟鲁司特非劣效于氟替卡松。',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', '']
+                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
@@ -2452,7 +2469,7 @@
                     }
                 },
                 timeline: {
-                    duration: 131092.5,
+                    duration: 132000,
                     autoPlay: true,
                     labels: {
                         "page5-playpoint": 98000
@@ -2651,12 +2668,12 @@
                             fill: ['rgba(16,2,247,1.00)']
                         },
                         {
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
                             type: 'text',
-                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text6',
                             text: '研究设计',
                             align: 'left',
-                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap']
+                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -2692,10 +2709,375 @@
                             boxShadow: ['', 3, 3, 3, 0, 'rgba(0,0,0,0.65098)']
                         },
                         {
+                            rect: ['15px', '49px', '541px', '138px', 'auto', 'auto'],
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
+                            id: 'Text7',
+                            text: '一项为期52周的多中心、随机、对照的开放性研究，共纳入395例2-8岁的轻度持续性哮喘或反复性哮喘患儿，随机吸入布地奈德0.5mg qd（n=197）或口服孟鲁司特4mg或5mg qd（n=198）治疗52周。轻度哮喘急性发作时，患者每日加用1次布地奈德0.5mg雾化吸入治疗，持续14天，重度发作时，患者接受口服激素治疗，持续3-10天。主要疗效终点为52周内因哮喘急性发作而第一次加用其他哮喘药物的时间。次要终点包括12周和26周时第一次加用其他药物的时间，12周、26周和52周时第一次哮喘发作（轻度和重度）的时间，52周内哮喘发作，日记参数（如呼气峰流速PEF），或者报告的结果和医生、护士的评估。',
+                            align: 'left',
+                            type: 'text'
+                        },
+                        {
+                            type: 'rect',
+                            id: 'sym-page2-popup-close',
+                            symbolName: 'sym-page2-popup-close',
+                            cursor: 'pointer',
+                            rect: ['536', '0', '38', '38', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '574px', '187px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-page6": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            id: 'page3-bg',
+                            type: 'image',
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/page3-bg.png', '0px', '0px']
+                        },
+                        {
+                            id: 'right-kid',
+                            type: 'image',
+                            rect: ['783px', '65px', '137px', '375px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/right-kid.png', '0px', '0px']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [12, 'px'], 'rgba(0,0,0,1)', '400', 'none solid rgb(0, 0, 0)', 'normal', 'break-word', 'nowrap'],
+                            rect: ['199', '478px', 'auto', 'auto', 'auto', 'auto'],
+                            align: 'left',
+                            text: '6. Williams B, et al. Cl in Exp Allergy. 2001;31(6):845-854.<br>7. Knorr B, et al; Pediatric Montelukast Study Group. JAMA. 1998;279(15):1181-1186.',
+                            id: 'Text',
+                            opacity: '0',
+                            display: 'block',
+                            type: 'text'
+                        },
+                        {
+                            id: 'left-kid',
+                            type: 'image',
+                            rect: ['161px', '122px', '105px', '290px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/left-kid.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['199px', '113px', '626px', '347px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'page6-chart',
+                            type: 'image',
+                            display: 'block',
+                            fill: ['rgba(0,0,0,0)', 'images/page6-chart.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['263px', '323px', '153px', '61px', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'page6-chart-line1',
+                            display: 'block',
+                            clip: 'rect(0px 0px 61px 0px)',
+                            fill: ['rgba(0,0,0,0)', 'images/page6-chart-line1.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['439px', '227px', '360px', '107px', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'page6-chart-line22',
+                            display: 'block',
+                            clip: 'rect(0px 0px 107px 0px)',
+                            fill: ['rgba(0,0,0,0)', 'images/page6-chart-line2.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
+                            opacity: '0',
+                            rect: ['736px', '477px', null, null, 'auto', 'auto'],
+                            display: 'block',
+                            symbolName: 'sym-page6-button',
+                            cursor: 'pointer',
+                            id: 'sym-page6-button'
+                        },
+                        {
+                            type: 'rect',
+                            display: 'none',
+                            symbolName: 'sym-page6-popup',
+                            rect: ['225px', '192px', null, null, 'auto', 'auto'],
+                            id: 'sym-page6-popup'
+                        },
+                        {
+                            preload: 'auto',
+                            type: 'audio',
+                            source: ['media/page6.mp3'],
+                            id: 'page6',
+                            rect: ['214', '174', '320px', '45px', 'auto', 'auto'],
+                            display: 'none',
+                            tag: 'audio'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1024px', '768px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 149781,
+                    autoPlay: true,
+                    labels: {
+                        "page6-playpoint": 132000
+                    },
+                    data: [
+                        [
+                            "eid347",
+                            "display",
+                            132000,
+                            0,
+                            "linear",
+                            "${sym-page6-button}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid365",
+                            "display",
+                            135000,
+                            0,
+                            "linear",
+                            "${sym-page6-button}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid344",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${sym-page6-popup}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid361",
+                            "clip",
+                            133500,
+                            500,
+                            "linear",
+                            "${page6-chart-line1}",
+                            [0,0,61,0],
+                            [0,153,61,0],
+                            {valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'}
+                        ],
+                        [
+                            "eid348",
+                            "display",
+                            132000,
+                            0,
+                            "linear",
+                            "${page6-chart-line22}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid362",
+                            "display",
+                            134000,
+                            0,
+                            "linear",
+                            "${page6-chart-line22}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid350",
+                            "display",
+                            132000,
+                            0,
+                            "linear",
+                            "${page6-chart}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid352",
+                            "display",
+                            133000,
+                            0,
+                            "linear",
+                            "${page6-chart}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid357",
+                            "scaleX",
+                            133000,
+                            500,
+                            "linear",
+                            "${page6-chart}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid351",
+                            "display",
+                            132000,
+                            0,
+                            "linear",
+                            "${Text}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid368",
+                            "display",
+                            135000,
+                            0,
+                            "linear",
+                            "${Text}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid364",
+                            "clip",
+                            134000,
+                            1000,
+                            "linear",
+                            "${page6-chart-line22}",
+                            [0,0,107,0],
+                            [0,360,107,0],
+                            {valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'}
+                        ],
+                        [
+                            "eid367",
+                            "opacity",
+                            135000,
+                            500,
+                            "linear",
+                            "${sym-page6-button}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid349",
+                            "display",
+                            132000,
+                            0,
+                            "linear",
+                            "${page6-chart-line1}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid359",
+                            "display",
+                            133500,
+                            0,
+                            "linear",
+                            "${page6-chart-line1}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid358",
+                            "scaleY",
+                            133000,
+                            500,
+                            "linear",
+                            "${page6-chart}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid370",
+                            "opacity",
+                            135000,
+                            500,
+                            "linear",
+                            "${Text}",
+                            '0',
+                            '1'
+                        ],
+                            [ "eid371", "trigger", 133500, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${page6}', [] ] ]
+                    ]
+                }
+            },
+            "sym-page6-button": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '89px', '29px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect',
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(16,2,247,1.00)']
+                        },
+                        {
+                            font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(255,255,255,1.00)', '400', 'none solid rgb(2, 152, 202)', 'normal', 'break-word', 'nowrap'],
+                            type: 'text',
+                            id: 'Text6',
+                            text: '研究设计',
+                            align: 'left',
+                            rect: ['9px', '4px', 'auto', 'auto', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '89px', '29px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "sym-page6-popup": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '20px', '563px', '223px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            fill: ['rgba(255,255,255,1.00)'],
+                            id: 'RoundRect2',
+                            stroke: [1, 'rgba(0,0,255,1.00)', 'solid'],
+                            type: 'rect',
+                            boxShadow: ['', 3, 3, 3, 0, 'rgba(0,0,0,0.65098)']
+                        },
+                        {
                             font: ['Arial, Helvetica, sans-serif', [18, 'px'], 'rgba(0,0,0,1.00)', '400', 'none solid rgb(255, 255, 255)', 'normal', 'break-word', ''],
                             type: 'text',
                             id: 'Text7',
-                            text: '一项为期52周的多中心、随机、对照的开放性研究，共纳入395例2-8岁的轻度持续性哮喘或反复性哮喘患儿，随机吸入布地奈德0.5mg qd（n=197）或口服孟鲁司特4mg或5mg qd（n=198）治疗52周。轻度哮喘急性发作时，患者每日加用1次布地奈德0.5mg雾化吸入治疗，持续14天，重度发作时，患者接受口服激素治疗，持续3-10天。主要疗效终点为52周内因哮喘急性发作而第一次加用其他哮喘药物的时间。次要终点包括12周和26周时第一次加用其他药物的时间，12周、26周和52周时第一次哮喘发作（轻度和重度）的时间，52周内哮喘发作，日记参数（如呼气峰流速PEF），或者报告的结果和医生、护士的评估。',
+                            text: '一项包括3项研究的汇总分析，其中2项为成人（15-85岁）研究，1项为儿童（6-14岁）研究，分别纳入436、374和245名慢性哮喘患者，这些患者已经完成双盲、安慰剂对照研究，并分别进入3项扩展性研究，接受口服孟鲁司特（成人10mg，儿童5mg咀嚼片，每日1次）或ICS（成人倍氯米松200μg，每日2次；儿童100μg，每日3次或其他ICS当量）治疗。成人双盲研究为期37周，成人开放性研究为期156周，儿童开放性研究为期112周。儿童研究的主要重点为FEV1和生活质量（9-14岁儿童）。',
                             align: 'left',
                             rect: ['15px', '49px', '541px', '138px', 'auto', 'auto']
                         },

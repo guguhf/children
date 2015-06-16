@@ -410,6 +410,17 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 132000, function(sym, e) {
+         sym.stop();
+         sym.$("page5")[0].pause();
+         sym.getSymbolElement().hide();
+         
+         sym.getComposition().getStage().$("sym-page6").show();
+         sym.getComposition().getStage().getSymbol("sym-page6").play("page6-playpoint");
+
+      });
+      //Edge binding end
+
    })("sym-page5");
    //Edge symbol end:'sym-page5'
 
@@ -437,5 +448,46 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       })("sym-page5-popup");
    //Edge symbol end:'sym-page5-popup'
+
+   //=========================================================
+   
+   //Edge symbol: 'sym-page6'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${sym-page6-button}", "click", function(sym, e) {
+         
+         // Show an element 
+         sym.$("sym-page6-popup").show();
+
+      });
+      //Edge binding end
+
+   })("sym-page6");
+   //Edge symbol end:'sym-page6'
+
+   //=========================================================
+   
+   //Edge symbol: 'sym-page2-button_1'
+   (function(symbolName) {   
+   
+      })("sym-page6-button");
+   //Edge symbol end:'sym-page6-button'
+
+   //=========================================================
+   
+   //Edge symbol: 'sym-page2-popup_1'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${sym-page2-popup-close}", "click", function(sym, e) {
+         // insert code for mouse click here
+         // Hide an element 
+         sym.getSymbolElement().hide();
+         
+
+      });
+         //Edge binding end
+
+      })("sym-page6-popup");
+   //Edge symbol end:'sym-page6-popup'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-4782395");
